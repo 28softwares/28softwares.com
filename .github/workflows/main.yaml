@@ -1,0 +1,26 @@
+name: CI/CD React Project to Cloud
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install PNPM
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+
+      - name: Clone main repo
+        uses: actions/checkout@v4
+
+      - name: Build Project
+        run: pnpm install && pnpm build
