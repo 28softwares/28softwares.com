@@ -1,4 +1,4 @@
-name: CI/CD React Project to Cloud
+name: Deploy Frontend to production
 
 on:
   push:
