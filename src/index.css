@@ -1,31 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-
 @layer components {
   .btn {
-      @apply p-2 w-36 h-10 rounded-lg font-ubuntu transform transition ease-linear hover:scale-105 hover:shadow-xl active:scale-95 font-bold uppercase;
+    @apply h-10 w-36 transform rounded-lg p-2 font-ubuntu font-bold uppercase transition ease-linear hover:scale-105 hover:shadow-xl active:scale-95;
   }
 
   .btn-primary {
     @apply bg-green-900;
-}
+  }
 
-.btn-secondary {
+  .btn-secondary {
     @apply bg-black;
+  }
 }
-
-}
-
-
-
 
 @layer utilities {
   button {
@@ -35,21 +28,21 @@
     letter-spacing: 2px;
     color: whitesmoke;
     outline: 0;
-    overflow:hidden;
+    overflow: hidden;
     background: none;
     z-index: 1;
     cursor: pointer;
-    transition:         0.08s ease-in;
-    -o-transition:      0.08s ease-in;
-    -ms-transition:     0.08s ease-in;
-    -moz-transition:    0.08s ease-in;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
     -webkit-transition: 0.08s ease-in;
   }
-  
+
   .fill-animation:hover {
     color: whitesmoke;
   }
-  
+
   .fill-animation:before {
     content: "";
     position: absolute;
@@ -61,10 +54,8 @@
     z-index: -1;
     -webkit-transition: top 0.2s ease-in;
   }
-  
+
   .fill-animation:hover:before {
     top: 0;
   }
-
-
 }

@@ -5,11 +5,11 @@ import { useContext } from "react";
 
 export const Navbar = () => {
   const { toggleTheme } = useContext(ThemeContext);
-  const navItems = ["About", "Services", "Contact"];
+  const navItems = ["Projects", "Services", "Contact"];
 
   return (
-    <div className="relative flex h-8 w-full flex-row text-sm pt-10 ">
-      <div className="flex-start absolute left-2  mx-auto self-end">
+    <div className="relative flex h-8 w-full flex-row pt-10 text-sm">
+      <div className="flex-start absolute left-2 mx-auto self-end">
         <NavLink to="/">
           <svg
             id="code-icon"
@@ -29,7 +29,7 @@ export const Navbar = () => {
         </NavLink>
       </div>
       <div className="absolute end-10 mx-auto self-end">
-        <ul className=" flex-row space-x-5 md:space-x-20 md:flex">
+        <ul className="flex-row space-x-5 md:flex md:space-x-20">
           {navItems.map((item) => {
             return (
               <motion.button
@@ -40,7 +40,7 @@ export const Navbar = () => {
                 key={item}
               >
                 <NavLink
-                  className="text-black dark:text-white font-ubuntu font-semibold lowercase"
+                  className="font-ubuntu font-semibold lowercase text-black dark:text-white"
                   to={`/${item}`.toLowerCase()}
                 >
                   {item}
@@ -48,14 +48,14 @@ export const Navbar = () => {
               </motion.button>
             );
           })}
-          <button onClick={toggleTheme} className="top-2 md:top-0 md:right-2">
+          <button onClick={toggleTheme} className="top-2 md:right-2 md:top-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-6 dark:text-white text-black"
+              className="size-6 text-black dark:text-white"
             >
               <path
                 strokeLinecap="round"
