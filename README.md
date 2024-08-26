@@ -1,30 +1,15 @@
-# React + TypeScript + Vite
+The named behind 28Softwares is that, we are making 28 different software products for different areas (such as Hotel lines, schools, Hospitals etc.). These softwares are generally MIS, ERP or CRM which are powered by AI/ML.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Besides our in house projects, we also work for out-source/freelance projects doing Web Development, Mobile App Development, and other software development services.
 
-Currently, two official plugins are available:
+## Content Idea
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The website will be minimal having following features:
 
-## Expanding the ESLint configuration
+- A landing page with a brief introduction of company services (such as Web Development, Mobile App Development.) including its motto.
+- A page for recently done projects and our ready to use products.
+- A page for contact us.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tools Used for the website
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+TypeScript-React, Shadcn UI (Tailwind), Vite, [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)

@@ -1,11 +1,13 @@
 import "./App.css";
+import { Card } from "./UI/shadcn/ui/card";
 import logoImage from "./assets/images/logo.png";
 
 function App() {
   return (
-    <div
+    <Card
       style={{
         height: "100vh",
+        width: "auto",
         backgroundImage: `url(${logoImage})`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "top",
@@ -35,7 +37,7 @@ function App() {
           <a href="#">UniPlan Mobile App</a>
         </li>
       </ul>
-    </div>
+    </Card>
   );
 }
 
