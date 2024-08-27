@@ -12,4 +12,4 @@ The website will be minimal having following features:
 
 ## Tools Used for the website
 
-TypeScript-React, Shadcn UI (Tailwind), Vite, [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)
+TypeScript-React, Shadcn UI (Tailwind),Tanstack-Router,Vite, [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/)

@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ThemeContext } from "@/hooks/ThemeContext";
 import { useContext } from "react";
+import { Link } from "@tanstack/react-router";
 
 export const Navbar = () => {
   const { toggleTheme } = useContext(ThemeContext);
@@ -9,7 +9,7 @@ export const Navbar = () => {
   return (
     <div className="relative flex h-8 w-full flex-row pt-10 text-sm">
       <div className="flex-start absolute left-2 mx-auto self-end">
-        <NavLink to="/">
+        <Link to="/">
           <svg
             id="code-icon"
             xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ export const Navbar = () => {
               d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"
             />
           </svg>
-        </NavLink>
+        </Link>
       </div>
       <div className="absolute end-10 mx-auto self-end">
         <ul className="flex-row space-x-5 md:flex md:space-x-20">
@@ -36,12 +36,12 @@ export const Navbar = () => {
             }}
             key={"projects"}
           >
-            <NavLink
+            <Link
               className="font-ubuntu font-semibold lowercase text-black dark:text-white"
               to={"/projects"}
             >
               projects
-            </NavLink>
+            </Link>
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.3 }}
@@ -50,12 +50,12 @@ export const Navbar = () => {
             }}
             key={"projects"}
           >
-            <NavLink
+            <Link
               className="font-ubuntu font-semibold lowercase text-black dark:text-white"
-              to={"/#"}
+              href={"/#"}
             >
               services
-            </NavLink>
+            </Link>
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.3 }}
@@ -64,12 +64,12 @@ export const Navbar = () => {
             }}
             key={"projects"}
           >
-            <NavLink
+            <Link
               className="font-ubuntu font-semibold lowercase text-black dark:text-white"
-              to={"/#"}
+              href={"/#"}
             >
               contact
-            </NavLink>
+            </Link>
           </motion.button>
           <button onClick={toggleTheme} className="top-2 md:right-2 md:top-0">
             <svg
