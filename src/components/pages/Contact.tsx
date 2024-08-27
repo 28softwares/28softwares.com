@@ -9,7 +9,7 @@ export const Contact = () => {
       </h1>
       <div className="relative self-center">
         <input
-          className="h-12 w-96 self-center rounded-xl border border-black px-10 py-2 text-left text-black outline-none lg:w-[450px] text-lg font-extrabold text-blue-800"
+          className="h-12 w-96 self-center rounded-xl border border-black px-10 py-2 text-left  outline-none lg:w-[450px] text-lg font-extrabold text-blue-800"
           type="text"
           value="28softwaresnp@gmail.com"
         ></input>
@@ -19,7 +19,7 @@ export const Contact = () => {
         />
       </div>
       <div className="mx-auto">
-        <Link to={"/help"}>
+        <Link to={"/faq"}>
           <RectButton
             tailwind_class="btn-secondary border bg-yellow-tertiary border-black dark:border-white"
             label="Need help?"

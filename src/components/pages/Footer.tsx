@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <div className="h-full px-2 dark:text-white">
+        <div className="h-full px-2 dark:text-gray-300">
             <div className=" flex flex-col md:flex-row lg:flex-row gap-y-10">
                 <div className="m-2 basis-1/2 p-3 space-y-12">
                     <h1 className=" text-center font-ubuntu text-7xl underline uppercase">

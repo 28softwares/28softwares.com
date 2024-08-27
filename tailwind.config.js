@@ -26,6 +26,7 @@ module.exports = {
         ubuntu: ["Ubuntu", "sans-serif"],
         lato: ["Lato", "sans-serif"],
         rethink: ["Rethink", "sans-serif"],
+        protest:['Protest','sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

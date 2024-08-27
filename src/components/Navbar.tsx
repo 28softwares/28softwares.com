@@ -5,7 +5,6 @@ import { useContext } from "react";
 
 export const Navbar = () => {
   const { toggleTheme } = useContext(ThemeContext);
-  const navItems = ["Projects", "Services", "Contact"];
 
   return (
     <div className="relative flex h-8 w-full flex-row pt-10 text-sm">
@@ -30,24 +29,48 @@ export const Navbar = () => {
       </div>
       <div className="absolute end-10 mx-auto self-end">
         <ul className="flex-row space-x-5 md:flex md:space-x-20">
-          {navItems.map((item) => {
-            return (
-              <motion.button
-                whileHover={{ scale: 1.3 }}
-                whileTap={{
-                  scale: 0.8,
-                }}
-                key={item}
-              >
-                <NavLink
-                  className="font-ubuntu font-semibold lowercase text-black dark:text-white"
-                  to={`/${item}`.toLowerCase()}
-                >
-                  {item}
-                </NavLink>
-              </motion.button>
-            );
-          })}
+          <motion.button
+            whileHover={{ scale: 1.3 }}
+            whileTap={{
+              scale: 0.8,
+            }}
+            key={"projects"}
+          >
+            <NavLink
+              className="font-ubuntu font-semibold lowercase text-black dark:text-white"
+              to={"/projects"}
+            >
+              projects
+            </NavLink>
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.3 }}
+            whileTap={{
+              scale: 0.8,
+            }}
+            key={"projects"}
+          >
+            <NavLink
+              className="font-ubuntu font-semibold lowercase text-black dark:text-white"
+              to={"/#"}
+            >
+              services
+            </NavLink>
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.3 }}
+            whileTap={{
+              scale: 0.8,
+            }}
+            key={"projects"}
+          >
+            <NavLink
+              className="font-ubuntu font-semibold lowercase text-black dark:text-white"
+              to={"/#"}
+            >
+              contact
+            </NavLink>
+          </motion.button>
           <button onClick={toggleTheme} className="top-2 md:right-2 md:top-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
