@@ -14,7 +14,7 @@ export const Contact = () => {
           value="28softwaresnp@gmail.com"
         ></input>
         <RectButton
-          tailwind_class="btn-secondary rounded-l-none  h-full  absolute top-0  right-0 border-black dark:border-white active:scale-100"
+          tailwind_class="btn-primary rounded-l-none  h-full  absolute top-0  right-0 border-black dark:border-white active:scale-100"
           label="Send Email"
         />
       </div>

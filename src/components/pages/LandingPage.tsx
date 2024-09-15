@@ -22,7 +22,7 @@ export const LandingPage = () => {
         >
           <Card
             className={cn(
-              " h-full rounded-xl  py-5  border-dotted bg-[#262e38] text-white dark:bg-transparent md:w-full lg:w-[400px] lg:h-[250px] mx-auto self-center justify-center"
+              " h-full border-none py-5 dark:bg-[#262e38] text-white dark:bg-transparent md:w-full lg:w-[400px] lg:h-[250px] mx-auto self-center justify-center"
             )}
           >
             <CardHeader>
@@ -30,7 +30,7 @@ export const LandingPage = () => {
                 Pioneering Innovation
               </CardTitle>
             </CardHeader>
-            <CardContent className="self-center text-md text-center font-lato text-gray-400">
+            <CardContent className="self-center text-md text-center font-lato text-black dark:text-gray-400">
               Our team of veteran developers excels in turning complex ideas
               into robust solutions. Leveraging cutting-edge technology, we
               ensure your software stands out in a competitive landscape.
@@ -44,7 +44,7 @@ export const LandingPage = () => {
         >
           <Card
             className={cn(
-              " h-full rounded-xl  py-5 border-dotted bg-[#262e38] text-white dark:bg-transparent md:w-full lg:-w-[400px] lg:h-[250px] mx-auto self-center justify-center"
+              " h-full border-none py-5  dark:bg-[#262e38] text-white dark:bg-transparent md:w-full lg:-w-[400px] lg:h-[250px] mx-auto self-center justify-center"
             )}
           >
             <CardHeader>
@@ -52,11 +52,10 @@ export const LandingPage = () => {
                 Expertise You Can Trust
               </CardTitle>
             </CardHeader>
-            <CardContent className="self-center text-md text-center font-lato text-gray-400">
+            <CardContent className="self-center text-md text-center font-lato text-black dark:text-gray-400">
               Our development team combines deep experience with cutting-edge
               tools to deliver software that’s reliable, scalable, and
-              future-ready. We turn your vision into a reality with precision
-              and expertise.
+              future-ready.
             </CardContent>
           </Card>
         </motion.div>
@@ -67,7 +66,7 @@ export const LandingPage = () => {
         >
           <Card
             className={cn(
-              " h-full rounded-xl  py-5 border-dotted bg-[#262e38] text-white dark:bg-transparent md:w-full lg:-w-[400px] lg:h-[250px] mx-auto self-center justify-center"
+              " h-full border-none py-5  dark:bg-[#262e38] text-white dark:bg-transparent md:w-full lg:-w-[400px] lg:h-[250px] mx-auto self-center justify-center"
             )}
           >
             <CardHeader>
@@ -75,7 +74,7 @@ export const LandingPage = () => {
                 Excellence in Every Line of Code
               </CardTitle>
             </CardHeader>
-            <CardContent className="self-center text-md text-center font-lato text-gray-400">
+            <CardContent className="self-center text-md text-center font-lato text-black dark:text-gray-400">
               We build solutions that are as innovative as they are reliable. We
               turn your vision into a reality with precision and expertise.
             </CardContent>
