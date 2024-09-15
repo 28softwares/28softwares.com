@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { RectButton } from "../RectButton";
+import { RectButton } from "./RectButton";
 
 export const Contact = () => {
   return (

@@ -1,8 +1,8 @@
 import { Contact } from "./Contact";
-import { Layout } from "../Layout";
 import { Footer } from "./Footer";
 import { Services } from "./Services";
 import { LandingPage } from "./LandingPage";
+import { Layout } from "lucide-react";
 
 export const Home = () => {
   return (

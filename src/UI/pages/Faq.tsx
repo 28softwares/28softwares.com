@@ -4,14 +4,16 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/UI/shadcn/ui/accordion";
-import { Layout } from "../Layout";
+import { Layout } from "./Layout";
 
 export function Faq() {
   return (
     <Layout>
-        <div className="self-center w-4/5 mx-auto p-5 md:p-10">
-            <h1 className="text-7xl underline font-lato">Frequently Asked Questions</h1>
-        </div>
+      <div className="self-center w-4/5 mx-auto p-5 md:p-10">
+        <h1 className="text-7xl underline font-lato">
+          Frequently Asked Questions
+        </h1>
+      </div>
       <Accordion
         type="single"
         collapsible
