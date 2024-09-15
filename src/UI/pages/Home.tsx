@@ -2,7 +2,7 @@ import { Contact } from "./Contact";
 import { Footer } from "./Footer";
 import { Services } from "./Services";
 import { LandingPage } from "./LandingPage";
-import { Layout } from "lucide-react";
+import { Layout } from "./Layout";
 
 export const Home = () => {
   return (
