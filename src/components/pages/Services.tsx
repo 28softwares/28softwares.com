@@ -108,7 +108,8 @@ export const Services = () => {
           </CardHeader>
           <CardContent className="text-center font-lato text-lg text-gray-400">
             <p>
-            Providing ongoing support, updates, and maintenance services to ensure website performance and security.
+              Providing ongoing support, updates, and maintenance services to
+              ensure website performance and security.
             </p>
           </CardContent>
         </Card>
@@ -140,8 +141,10 @@ export const Services = () => {
           </CardHeader>
           <CardContent className="text-center font-lato text-lg text-gray-400">
             <p>
-              Providing ongoing support, updates, and maintenance services to
-              ensure website performance and security.
+              We specialize in creating mobile applications tailored to your
+              specific business needs, allowing customers to manage their
+              profiles, track orders, and access services directly from their
+              smartphones.
             </p>
           </CardContent>
         </Card>
