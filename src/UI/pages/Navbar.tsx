@@ -48,7 +48,7 @@ export const Navbar = () => {
               scale: 0.8,
             }}
           >
-            <Link
+            {/* <Link
               className="font-ubuntu font-semibold lowercase text-black dark:text-white"
               to="."
             >
@@ -66,7 +66,7 @@ export const Navbar = () => {
               to="."
             >
               contact
-            </Link>
+            </Link> */}
           </motion.button>
           <button onClick={toggleTheme} className="top-2 md:right-2 md:top-0">
             {dark ? (
