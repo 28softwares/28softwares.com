@@ -34,7 +34,6 @@ export const Navbar = () => {
             whileTap={{
               scale: 0.8,
             }}
-            key={"projects"}
           >
             <Link
               className="font-ubuntu font-semibold lowercase text-black dark:text-white"
@@ -48,7 +47,6 @@ export const Navbar = () => {
             whileTap={{
               scale: 0.8,
             }}
-            key={"projects"}
           >
             <Link
               className="font-ubuntu font-semibold lowercase text-black dark:text-white"
@@ -62,7 +60,6 @@ export const Navbar = () => {
             whileTap={{
               scale: 0.8,
             }}
-            key={"projects"}
           >
             <Link
               className="font-ubuntu font-semibold lowercase text-black dark:text-white"
