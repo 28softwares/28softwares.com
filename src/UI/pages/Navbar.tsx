@@ -1,10 +1,10 @@
-import { motion } from "framer-motion";
-import { ThemeContext } from "@/hooks/ThemeContext";
-import { useContext } from "react";
-import { Link } from "@tanstack/react-router";
+import { motion } from 'framer-motion'
+import { ThemeContext } from '@/hooks/ThemeContext'
+import { useContext } from 'react'
+import { Link } from '@tanstack/react-router'
 
 export const Navbar = () => {
-  const { toggleTheme, dark } = useContext(ThemeContext);
+  const { toggleTheme, dark } = useContext(ThemeContext)
 
   return (
     <div className="relative flex h-8 w-full flex-row pt-10 text-sm">
@@ -27,7 +27,7 @@ export const Navbar = () => {
           </svg>
         </Link>
       </div>
-      <div className="absolute end-10 mx-auto self-end">
+      <div className="absolute end-10 mx-auto">
         <ul className="flex-row space-x-5 md:flex md:space-x-20">
           <motion.button
             whileHover={{ scale: 1.3 }}
@@ -37,7 +37,7 @@ export const Navbar = () => {
           >
             <Link
               className="font-ubuntu font-semibold lowercase text-black dark:text-white"
-              to={"/projects"}
+              to={'/projects'}
             >
               projects
             </Link>
@@ -104,5 +104,5 @@ export const Navbar = () => {
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
