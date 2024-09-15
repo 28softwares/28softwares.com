@@ -50,7 +50,7 @@ export const Navbar = () => {
           >
             <Link
               className="font-ubuntu font-semibold lowercase text-black dark:text-white"
-              href={"/#"}
+              to="."
             >
               services
             </Link>
@@ -63,7 +63,7 @@ export const Navbar = () => {
           >
             <Link
               className="font-ubuntu font-semibold lowercase text-black dark:text-white"
-              href={"/#"}
+              to="."
             >
               contact
             </Link>
