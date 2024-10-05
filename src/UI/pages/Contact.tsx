@@ -1,5 +1,5 @@
-import { Link } from "@tanstack/react-router";
-import { RectButton } from "./RectButton";
+import { companyDataConstants } from '@/constants/companyData.constant'
+import { RectButton } from './RectButton'
 
 export const Contact = () => {
   return (
@@ -13,21 +13,14 @@ export const Contact = () => {
           type="text"
           value="28softwaresnp@gmail.com"
         ></input>
-        <RectButton
-          tailwind_class="btn-primary rounded-l-none  h-full  absolute top-0  right-0 border-black dark:border-white active:scale-100"
-          label="Send Email"
-        />
-      </div>
-      <div className="mx-auto">
-        <Link to={"/faq"}>
+        <a href={`mailto:${companyDataConstants.email}`}>
           <RectButton
-            tailwind_class="btn-secondary border bg-yellow-tertiary border-black dark:border-white"
-            label="Need help?"
+            tailwind_class="btn-primary rounded-l-none  h-full  absolute top-0  right-0 border-black dark:border-white active:scale-100"
+            label="Send Email"
           />
-        </Link>
+        </a>
       </div>
-      <div></div>
     </div>
     // </div>
-  );
-};
+  )
+}
