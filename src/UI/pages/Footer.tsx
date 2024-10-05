@@ -1,5 +1,6 @@
-import { Button } from "@/UI/shadcn/ui/button";
-import { Linkedin, MapPin, Twitter } from "lucide-react";
+import { Button } from '@/UI/shadcn/ui/button'
+import { Link } from '@tanstack/react-router'
+import { Linkedin, MapPin } from 'lucide-react'
 
 export const Footer = () => {
   return (
@@ -15,14 +16,16 @@ export const Footer = () => {
       <div className="space-y-4">
         <h2 className="text-2xl font-semibold tracking-tight">FOLLOW US</h2>
         <div className="flex gap-4">
-          <Button variant="ghost" size="icon" className="hover:bg-gray-800">
-            <Linkedin className="h-6 w-6" />
-            <span className="sr-only">LinkedIn</span>
-          </Button>
-          <Button variant="ghost" size="icon" className="hover:bg-gray-800">
-            <Twitter className="h-6 w-6" />
-            <span className="sr-only">Twitter</span>
-          </Button>
+          <Link
+            to="https://linkedin.com/company/28softwares"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button variant="ghost" size="icon" className="hover:bg-gray-800">
+              <Linkedin className="h-6 w-6" />
+              <span className="sr-only">LinkedIn</span>
+            </Button>
+          </Link>
         </div>
       </div>
 
@@ -30,5 +33,5 @@ export const Footer = () => {
         Copyright © 2024 | 28Softwares
       </div>
     </footer>
-  );
-};
+  )
+}
