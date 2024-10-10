@@ -8,7 +8,7 @@ export const Footer = () => {
     <footer className="p-8 md:p-12 lg:p-16 border-t-yellow-200 border-2">
       <div className="grid sm:grid-cols-2 md:grid-cols-3 md:justify-items-center gap-4">
         <div className="space-y-2">
-          <h2 className="text-2xl font-semibold tracking-tight">
+          <h2 className="text-2xl font-semibold tracking-tight text-primary">
             28Softwares Pvt. Ltd.
           </h2>
           <article>Building tomorrows digital experience today.</article>
@@ -21,7 +21,7 @@ export const Footer = () => {
 
         {/* Socials */}
         <div className="space-y-4">
-          <h2 className="text-2xl font-semibold tracking-tight uppercase">
+          <h2 className="text-2xl font-semibold tracking-tight uppercase text-primary">
             Follow Us
           </h2>
           <div className="flex flex-col gap-2">
@@ -39,7 +39,7 @@ export const Footer = () => {
         </div>
 
         <div className="quick-links">
-          <h2 className="text-2xl font-semibold tracking-tight pb-2 uppercase">
+          <h2 className="text-2xl font-semibold tracking-tight pb-2 uppercase text-primary">
             Quick Links
           </h2>
           <ul className="space-y-2">

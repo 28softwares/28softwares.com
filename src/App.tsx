@@ -1,12 +1,7 @@
 import { Home } from './UI/pages/Home'
-import { ThemeProvider } from '@/components/theme-provider'
 
 function App() {
-  return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <Home />
-    </ThemeProvider>
-  )
+  return <Home />
 }
 
 export default App

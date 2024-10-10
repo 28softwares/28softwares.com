@@ -1,5 +1,6 @@
 import { FloatingNav } from '@/components/aceternity/floating-navbar'
 import { ModeToggle } from '@/components/mode-toggle'
+import { TopNavbar } from '@/components/top-navbar'
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -14,7 +15,7 @@ import { navLinks } from '@/constants/navlinks'
 export const Navbar = () => {
   return (
     <>
-      <FloatingNav navItems={navLinks} />
+      <TopNavbar />
     </>
   )
 }

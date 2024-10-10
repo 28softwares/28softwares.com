@@ -4,12 +4,14 @@ import { Button } from '@/components/ui/button'
 export const LandingPage = () => {
   return (
     <>
-      <div className="h-screen flex flex-col items-center justify-center space-y-4">
-        <h1 className="text-center font-bold text-6xl">
+      <div className="mt-12 p-8 md:mt-0 md:h-screen flex flex-col md:items-center justify-center space-y-4">
+        <h1 className="md:text-center font-bold text-4xl md:text-5xl lg:text-6xl">
           <span className="">28Softwares</span>, Building tomorrows <br />
           Digital Experience Today.
         </h1>
-        <Button>Get Started</Button>
+        <div>
+          <Button>Get Started</Button>
+        </div>
         <div>
           <FeaturesSection />
         </div>
