@@ -1,3 +1,4 @@
+import { Footer } from './Footer'
 import { Navbar } from './Navbar'
 
 type Props = {
@@ -9,6 +10,7 @@ export const Layout = ({ children }: Props) => {
     <div className="min-h-screen">
       <Navbar />
       {children}
+      <Footer />
     </div>
   )
 }
