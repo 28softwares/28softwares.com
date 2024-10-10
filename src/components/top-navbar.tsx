@@ -14,8 +14,14 @@ export const TopNavbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0">
-              <span className="text-2xl font-bold text-primary">Logo</span>
+            <Link
+              to="/"
+              className="flex-shrink-0 flex gap-2 items-center justify-center"
+            >
+              <img src={'/28.svg'} className="size-12" />
+              <span className="text-2xl font-bold text-black dark:text-white">
+                28Softwares
+              </span>
             </Link>
           </div>
           <div className="hidden md:block">
