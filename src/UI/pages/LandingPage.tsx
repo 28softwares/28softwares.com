@@ -1,5 +1,5 @@
 import { FeaturesSection } from '@/components/aceternity/feature-section'
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/shadcn/ui/button'
 
 export const LandingPage = () => {
   return (

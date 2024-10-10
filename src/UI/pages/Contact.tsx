@@ -1,26 +1,19 @@
 import { companyDataConstants } from '@/constants/companyData.constant'
-import { RectButton } from './RectButton'
+import { Input } from '@/components/shadcn/ui/input'
+import { Button } from '@/components/shadcn/ui/button'
 
 export const Contact = () => {
   return (
-    <div className="mx-auto flex flex-col gap-y-12 px-2 py-48 dark:text-[#efefeb]">
-      <h1 className="mx-auto self-center font-rethink text-7xl">
-        Let's create something together
+    <div className="h-[50vh] flex  flex-col justify-center items-center gap-8">
+      <h1 className="lg:text-5xl font-bold">
+        Let's <span className=" underline">create</span> something together.
       </h1>
-      <div className="relative self-center">
-        <input
-          className="h-12 w-96 self-center rounded-xl border border-black px-10 py-2 text-left  outline-none lg:w-[450px] text-lg font-extrabold text-blue-800"
-          type="text"
-          value="28softwaresnp@gmail.com"
-        ></input>
+      <div className="flex gap-2">
+        <Input placeholder="28softwares@gmail.com" />
         <a href={`mailto:${companyDataConstants.email}`}>
-          <RectButton
-            tailwind_class="btn-primary rounded-l-none  h-full  absolute top-0  right-0 border-black dark:border-white active:scale-100"
-            label="Send Email"
-          />
+          <Button>Send Email</Button>
         </a>
       </div>
     </div>
-    // </div>
   )
 }

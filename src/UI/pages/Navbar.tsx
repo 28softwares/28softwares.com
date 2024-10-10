@@ -10,7 +10,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuViewport,
-} from '@/components/ui/navigation-menu'
+} from '@/components/shadcn/ui/navigation-menu'
 import { navLinks } from '@/constants/navlinks'
 export const Navbar = () => {
   return (

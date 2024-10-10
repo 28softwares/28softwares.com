@@ -1,4 +1,4 @@
-import { Card, CardContent } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/shadcn/ui/card'
 import { Layout } from './Layout'
 import images from '../../constants/image.constant'
 export const Projects = () => {
