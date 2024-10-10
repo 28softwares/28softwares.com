@@ -1,37 +1,60 @@
-import { Button } from '@/components/ui/button'
 import { companyDataConstants } from '@/constants/companyData.constant'
-import { Linkedin, MapPin } from 'lucide-react'
+import { MapPin } from 'lucide-react'
+import { navLinks } from '@/constants/navlinks'
+import { Link } from '@tanstack/react-router'
 
 export const Footer = () => {
   return (
-    <footer className="p-10">
-      <div className="flex gap-10">
-        <div className="space-y-4">
-          <h2 className="text-2xl font-semibold tracking-tight">CONTACT US</h2>
+    <footer className="p-8 md:p-12 lg:p-16 border-t-yellow-200 border-2">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 md:justify-items-center gap-4">
+        <div className="space-y-2">
+          <h2 className="text-2xl font-semibold tracking-tight">
+            28Softwares Pvt. Ltd.
+          </h2>
+          <article>Building tomorrows digital experience today.</article>
           <p>{companyDataConstants.address}</p>
-          <p className="flex items-center gap-2">
-            <MapPin className="h-5 w-5" />
-            Bhaktapur, Nepal
+          <p className="flex gap-2">
+            <MapPin className="size-5" />
+            Nepal
           </p>
         </div>
+
+        {/* Socials */}
         <div className="space-y-4">
-          <h2 className="text-2xl font-semibold tracking-tight">FOLLOW US</h2>
-          <div className="flex gap-4">
-            <a
-              href={companyDataConstants.socials.linkedin}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button variant="ghost" size="icon" className="hover:bg-gray-800">
-                <Linkedin className="h-6 w-6" />
-                <span className="sr-only">LinkedIn</span>
-              </Button>
-            </a>
+          <h2 className="text-2xl font-semibold tracking-tight uppercase">
+            Follow Us
+          </h2>
+          <div className="flex flex-col gap-2">
+            {companyDataConstants.socials.map((social) => (
+              <a
+                key={social.name}
+                href={social.link}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {social.name}
+              </a>
+            ))}
           </div>
+        </div>
+
+        <div className="quick-links">
+          <h2 className="text-2xl font-semibold tracking-tight pb-2 uppercase">
+            Quick Links
+          </h2>
+          <ul className="space-y-2">
+            {navLinks.map((navLink) => (
+              <li key={navLink.name}>
+                <Link to={navLink.link} className="hover:underline">
+                  {navLink.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
-      <div className="flex  justify-center font-ubuntu pb-10 text-center">
+      <div className="flex  justify-center p-4  text-center">
         Copyright © {companyDataConstants.foundedYear} -{' '}
         {new Date().getFullYear()} | 28Softwares Pvt. Ltd.
       </div>

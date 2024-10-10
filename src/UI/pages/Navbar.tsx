@@ -10,22 +10,8 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport,
 } from '@/components/ui/navigation-menu'
-
+import { navLinks } from '@/constants/navlinks'
 export const Navbar = () => {
-  const navLinks = [
-    {
-      name: 'Home',
-      link: '/',
-    },
-    {
-      name: 'Home',
-      link: '/',
-    },
-    {
-      name: 'Home',
-      link: '/',
-    },
-  ]
   return (
     <>
       <FloatingNav navItems={navLinks} />
