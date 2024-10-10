@@ -40,7 +40,7 @@ export const TopNavbar = () => {
           </div>
           <div className="md:hidden">
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-              <SheetTrigger asChild>
+              <SheetTrigger asChild title="open sheet">
                 <Button
                   variant="ghost"
                   size="icon"

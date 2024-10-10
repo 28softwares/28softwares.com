@@ -24,7 +24,9 @@ export function Faq() {
                 value={faq.question}
                 className="lg:text-xl"
               >
-                <AccordionTrigger>{faq.question}</AccordionTrigger>
+                <AccordionTrigger className="text-left">
+                  {faq.question}
+                </AccordionTrigger>
                 <AccordionContent className="lg:text-xl">
                   {faq.answer}
                 </AccordionContent>
