@@ -5,7 +5,7 @@ import { Link } from '@tanstack/react-router'
 
 export const Footer = () => {
   return (
-    <footer className="p-8 md:p-12 lg:p-16 border-t-yellow-200 border-2">
+    <footer className="p-8 md:p-12 lg:p-16  bg-secondary">
       <div className="grid sm:grid-cols-2 md:grid-cols-3 md:justify-items-center gap-4">
         <div className="space-y-2">
           <h2 className="text-2xl font-semibold tracking-tight text-primary">
