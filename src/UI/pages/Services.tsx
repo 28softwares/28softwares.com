@@ -4,8 +4,8 @@ import {
   CardTitle,
   CardDescription,
   CardContent,
-} from "@/UI/shadcn/ui/card";
-import { cn } from "@/UI/shadcn/utils";
+} from '@/components/ui/card'
+import { cn } from '@/lib/utils'
 
 export const Services = () => {
   return (
@@ -13,7 +13,7 @@ export const Services = () => {
       <div className="flex flex-col gap-5 p-10 md:flex-row-reverse">
         <Card
           className={cn(
-            "h-full rounded-xl border-dotted border-x-red-400 border-y-yellow-600 bg-[#262e38] text-white dark:bg-transparent md:w-[400px] lg:h-[350px]"
+            'h-full rounded-xl border-dotted border-x-red-400 border-y-yellow-600 bg-[#262e38] text-white dark:bg-transparent md:w-[400px] lg:h-[350px]'
           )}
         >
           <CardHeader>
@@ -46,7 +46,7 @@ export const Services = () => {
         </Card>
         <Card
           className={cn(
-            "h-full rounded-xl border-dotted border-x-red-400 border-y-yellow-600 bg-[#262e38] text-white dark:bg-transparent md:w-full lg:h-[350px]"
+            'h-full rounded-xl border-dotted border-x-red-400 border-y-yellow-600 bg-[#262e38] text-white dark:bg-transparent md:w-full lg:h-[350px]'
           )}
         >
           <CardHeader>
@@ -82,7 +82,7 @@ export const Services = () => {
       <div className="flex flex-col gap-5 px-10 md:flex-row">
         <Card
           className={cn(
-            "h-full rounded-xl border-dotted border-x-red-400 border-y-yellow-600 bg-[#262e38] text-white dark:bg-transparent md:w-[400px] lg:h-[350px]"
+            'h-full rounded-xl border-dotted border-x-red-400 border-y-yellow-600 bg-[#262e38] text-white dark:bg-transparent md:w-[400px] lg:h-[350px]'
           )}
         >
           <CardHeader>
@@ -115,7 +115,7 @@ export const Services = () => {
         </Card>
         <Card
           className={cn(
-            "h-full rounded-xl border-dotted border-x-red-400 border-y-yellow-600 bg-[#262e38] text-white dark:bg-transparent md:w-full lg:h-[350px]"
+            'h-full rounded-xl border-dotted border-x-red-400 border-y-yellow-600 bg-[#262e38] text-white dark:bg-transparent md:w-full lg:h-[350px]'
           )}
         >
           <CardHeader>
@@ -150,5 +150,5 @@ export const Services = () => {
         </Card>
       </div>
     </div>
-  );
-};
+  )
+}

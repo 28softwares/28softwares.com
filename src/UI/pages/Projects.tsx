@@ -1,27 +1,27 @@
-import { Card, CardContent } from "@/UI/shadcn/ui/card";
-import { Layout } from "./Layout";
-import images from "../../constants/image.constant";
+import { Card, CardContent } from '@/components/ui/card'
+import { Layout } from './Layout'
+import images from '../../constants/image.constant'
 export const Projects = () => {
   const projectList = [
     {
-      title: "Uniplan",
+      title: 'Uniplan',
       description:
-        "AI based Mobile App for teachers for creating and sharing curriculum and lesson plans.",
-      type: "Mobile Application",
-      link: "https://play.google.com/store/apps/details?id=com.uniplan",
+        'AI based Mobile App for teachers for creating and sharing curriculum and lesson plans.',
+      type: 'Mobile Application',
+      link: 'https://play.google.com/store/apps/details?id=com.uniplan',
       image: images.uniplanLogo,
       year: 2024,
     },
     {
-      title: "Investiaa",
+      title: 'Investiaa',
       description:
-        "An online ecosystem for startups, connecting incubators, angel investors, venture capitalists, and academia for seamless access and growth.",
-      link: "https://www.investiaa.com/",
-      type: "Web Application",
+        'An online ecosystem for startups, connecting incubators, angel investors, venture capitalists, and academia for seamless access and growth.',
+      link: 'https://www.investiaa.com/',
+      type: 'Web Application',
       image: images.investiaaLogo,
       year: 2024,
     },
-  ];
+  ]
   return (
     <Layout>
       <h4 className="text-4xl font-extrabold text-center dark:text-white p-5 mt-10">
@@ -47,5 +47,5 @@ export const Projects = () => {
         </div>
       ))}
     </Layout>
-  );
-};
+  )
+}

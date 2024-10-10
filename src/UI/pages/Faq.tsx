@@ -3,8 +3,8 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/UI/shadcn/ui/accordion";
-import { Layout } from "./Layout";
+} from '@/components/ui/accordion'
+import { Layout } from './Layout'
 
 export function Faq() {
   return (
@@ -107,5 +107,5 @@ export function Faq() {
         </AccordionItem>
       </Accordion>
     </Layout>
-  );
+  )
 }

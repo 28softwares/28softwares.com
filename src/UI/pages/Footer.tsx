@@ -1,4 +1,4 @@
-import { Button } from '@/UI/shadcn/ui/button'
+import { Button } from '@/components/ui/button'
 import { companyDataConstants } from '@/constants/companyData.constant'
 import { Linkedin, MapPin } from 'lucide-react'
 
