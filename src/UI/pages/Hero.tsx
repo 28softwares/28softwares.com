@@ -1,3 +1,4 @@
+import { BackgroundBeams } from '@/components/aceternity/background-beams'
 import { FeaturesSection } from '@/components/aceternity/feature-section'
 import { Button } from '@/components/shadcn/ui/button'
 
@@ -15,6 +16,7 @@ export const Hero = () => {
         <div>
           <FeaturesSection />
         </div>
+        <BackgroundBeams className="-z-50" />
       </div>
     </>
   )
