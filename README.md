@@ -19,3 +19,6 @@ TypeScript-React, Shadcn UI (Tailwind),Tanstack-Router,Vite, [Atomic Design](htt
 ```
 pnpm install && pnpm start:dev
 ```
+
+Contribution are welcome. 🚀
+``We are taking PR on `develop` branch only.``
