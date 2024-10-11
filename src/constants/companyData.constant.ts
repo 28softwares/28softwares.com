@@ -5,7 +5,14 @@ export const companyDataConstants = {
   foundedYear: 2024,
   email: '28softwaresnp@gmail.com',
 
-  socials: {
-    linkedin: 'https://linkedin.com/company/28softwares/',
-  },
+  socials: [
+    {
+      name: 'LinkedIn',
+      link: 'https://linkedin.com/company/28softwares/',
+    },
+    {
+      name: 'X',
+      link: 'https://x.com/28softwares/',
+    },
+  ],
 }

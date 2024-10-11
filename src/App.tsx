@@ -1,5 +1,7 @@
-import { Home } from "./UI/pages/Home";
+import { Home } from './UI/pages/Home'
 
-export const App = () => {
-  return <Home />;
-};
+function App() {
+  return <Home />
+}
+
+export default App
