@@ -13,6 +13,7 @@
 import { Route as rootRoute } from './routes/__root'
 import { Route as ServicesRouteImport } from './routes/services.route'
 import { Route as ProjectsRouteImport } from './routes/projects.route'
+import { Route as ProductsRouteImport } from './routes/products.route'
 import { Route as FaqsRouteImport } from './routes/faqs.route'
 import { Route as IndexRouteImport } from './routes/index.route'
 
@@ -25,6 +26,11 @@ const ServicesRouteRoute = ServicesRouteImport.update({
 
 const ProjectsRouteRoute = ProjectsRouteImport.update({
   path: '/projects',
+  getParentRoute: () => rootRoute,
+} as any)
+
+const ProductsRouteRoute = ProductsRouteImport.update({
+  path: '/products',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -56,6 +62,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FaqsRouteImport
       parentRoute: typeof rootRoute
     }
+    '/products': {
+      id: '/products'
+      path: '/products'
+      fullPath: '/products'
+      preLoaderRoute: typeof ProductsRouteImport
+      parentRoute: typeof rootRoute
+    }
     '/projects': {
       id: '/projects'
       path: '/projects'
@@ -78,6 +91,7 @@ declare module '@tanstack/react-router' {
 export const routeTree = rootRoute.addChildren({
   IndexRouteRoute,
   FaqsRouteRoute,
+  ProductsRouteRoute,
   ProjectsRouteRoute,
   ServicesRouteRoute,
 })
@@ -92,6 +106,7 @@ export const routeTree = rootRoute.addChildren({
       "children": [
         "/",
         "/faqs",
+        "/products",
         "/projects",
         "/services"
       ]
@@ -101,6 +116,9 @@ export const routeTree = rootRoute.addChildren({
     },
     "/faqs": {
       "filePath": "faqs.route.tsx"
+    },
+    "/products": {
+      "filePath": "products.route.tsx"
     },
     "/projects": {
       "filePath": "projects.route.tsx"

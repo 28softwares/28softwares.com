@@ -1,4 +1,4 @@
-import { WobbleCard } from '@/components/aceternity/wobble-card'
+import { WobbleCard } from '@/UI/aceternity/wobble-card'
 import { services } from '@/constants/services'
 
 export function Services() {

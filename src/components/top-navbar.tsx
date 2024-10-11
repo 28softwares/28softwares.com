@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { Link } from '@tanstack/react-router'
 import { Menu } from 'lucide-react'
-import { Button } from '@/components/shadcn/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/shadcn/ui/sheet'
+import { Button } from '@/UI/shadcn/ui/button'
+import { Sheet, SheetContent, SheetTrigger } from '@/UI/shadcn/ui/sheet'
 import { navLinks } from '@/constants/navlinks'
 import { ModeToggle } from './mode-toggle'
 

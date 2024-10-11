@@ -1,6 +1,6 @@
-import { BackgroundBeams } from '@/components/aceternity/background-beams'
-import { FeaturesSection } from '@/components/aceternity/feature-section'
-import { Button } from '@/components/shadcn/ui/button'
+import { BackgroundBeams } from '@/UI/aceternity/background-beams'
+import { FeaturesSection } from '@/UI/aceternity/feature-section'
+import { Button } from '@/UI/shadcn/ui/button'
 
 export const Hero = () => {
   return (

@@ -1,10 +1,15 @@
-import { Services } from "@/UI/pages/Services";
-import { createFileRoute } from "@tanstack/react-router";
+import { Layout } from '@/UI/pages/Layout'
+import { Projects } from '@/UI/pages/Projects'
+import { Services } from '@/UI/pages/Services'
+import { createFileRoute } from '@tanstack/react-router'
 
-export const Route = createFileRoute("/services")({
+export const Route = createFileRoute('/services')({
   component: () => (
     <div>
-      <Services />
+      <Layout>
+        <Services />
+        <Projects />
+      </Layout>
     </div>
   ),
-});
+})

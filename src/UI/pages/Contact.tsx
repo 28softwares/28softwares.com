@@ -1,6 +1,6 @@
 import { companyDataConstants } from '@/constants/companyData.constant'
-import { Input } from '@/components/shadcn/ui/input'
-import { Button } from '@/components/shadcn/ui/button'
+import { Input } from '@/UI/shadcn/ui/input'
+import { Button } from '@/UI/shadcn/ui/button'
 
 export const Contact = () => {
   return (

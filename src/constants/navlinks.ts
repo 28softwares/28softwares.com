@@ -8,11 +8,11 @@ export const navLinks = [
     link: '/about',
   },
   {
-    name: 'FAQs',
-    link: '/faqs',
+    name: 'Products',
+    link: '/products',
   },
   {
-    name: 'Projects',
-    link: '/projects',
+    name: 'Services',
+    link: '/services',
   },
 ]

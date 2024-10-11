@@ -1,5 +1,4 @@
 import { Contact } from './Contact'
-import { Services } from './Services'
 import { Hero } from './Hero'
 import { Layout } from './Layout'
 
@@ -8,7 +7,7 @@ export const Home = () => {
     <Layout>
       <div className="min-h-screen overflow-hidden">
         <Hero />
-        <Services />
+        {/* Top 1 Product showcase section  */}
         <Contact />
       </div>
     </Layout>
