@@ -1,6 +1,10 @@
-import { ArrowUpRight, AwardIcon } from 'lucide-react'
+import {
+  ArrowUpRight,
+  AwardIcon,
+  CheckCircle,
+  ChevronRight,
+} from 'lucide-react'
 import { Button } from '@/UI/shadcn/ui/button'
-import { Checkbox } from '../shadcn/ui/checkbox'
 
 const topProduct = {
   name: 'Ecommerce',
@@ -25,10 +29,11 @@ export const TopProduct = () => {
           <AwardIcon /> Our #1 Sold Product
         </Button>
         <Button
-          variant={'ghost'}
-          className="text-primary flex items-center gap-2 hover:-translate-y-2 hover:translate-x-2"
+          variant={'secondary'}
+          className="group text-primary flex items-center gap-2"
         >
-          View All <ArrowUpRight />
+          View All
+          <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
         </Button>
       </div>
       <div className="grid grid-cols-2 gap-8">
@@ -37,20 +42,22 @@ export const TopProduct = () => {
           <div className="grid w-[94%] gap-4">
             {topProduct.features.map((feature, index) => {
               return (
-                <p className="flex gap-3 lg:text-lg tracking-wide">
-                  <Checkbox
-                    key={index}
-                    className="rounded-full size-5 mt-1"
-                    checked
-                  />{' '}
+                <p className="flex gap-3 lg:text-lg tracking-wide" key={index}>
+                  <CheckCircle className="text-green-500 flex-shrink-0 mt-1" />
                   {feature}
                 </p>
               )
             })}
           </div>
           <div className="flex gap-4 p-6">
-            <Button variant={'secondary'}>Request for Demo</Button>
-            <Button>Request for Quotation</Button>
+            <Button variant="secondary" className="group">
+              Request for Demo
+              <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
+            <Button className="group">
+              Request for Quotation
+              <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </Button>
           </div>
         </div>
         <div className="img bg-primary p-8 rounded-lg">

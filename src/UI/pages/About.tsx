@@ -3,6 +3,7 @@ import { Button } from '../shadcn/ui/button'
 import { Card, CardHeader, CardContent } from '../shadcn/ui/card'
 import { Layout } from './Layout'
 import { members } from '@/constants/members'
+import { Contact } from './Contact'
 
 export const About = () => {
   return (
@@ -58,6 +59,8 @@ export const About = () => {
           </div>
         </div>
       </section>
+
+      <Contact />
     </Layout>
   )
 }

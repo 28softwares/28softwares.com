@@ -16,7 +16,7 @@ export const projectList = [
       'An online ecosystem for startups, connecting incubators, angel investors, venture capitalists, and academia for seamless access and growth.',
     link: 'https://www.investiaa.com/',
     type: 'Web Application',
-    image: images.investiaaLogo,
+    image: images.investiaaImage,
     year: 2024,
   },
 ]
