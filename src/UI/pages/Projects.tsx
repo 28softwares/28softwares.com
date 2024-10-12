@@ -17,11 +17,11 @@ export function Projects() {
       <h2 className="font-bold text-5xl mb-8">
         Our Past Works<span className="text-primary">.</span>
       </h2>
-      <div className="h-[40rem] w-full grid md:grid-cols-2 lg:grid-cols-3 gap-16">
+      <div className=" w-full grid md:grid-cols-2 lg:grid-cols-3 gap-16">
         {projectList.map((project, index) => (
           <div>
             <Card
-              className="w-[420px] static h-[420px] flex flex-col justify-between bg-secondary"
+              className="max-w-[420px] static h-[420px] flex flex-col justify-between bg-secondary"
               key={index}
             >
               <CardHeader key={index}>

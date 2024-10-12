@@ -4,12 +4,12 @@ import { services } from '@/constants/services'
 export function Services() {
   return (
     <div className="container grid">
-      <div className=" flex flex-col gap-2 justify-center items-center text-center pt-12">
+      <div className=" flex flex-col gap-2  md:justify-center items-start md:items-center text-center pt-12">
         <p className="font-bold text-xl text-primary">Our Services</p>
-        <h1 className="text-5xl font-bold ">
+        <h1 className="text-left  text-lg lg:text-5xl font-bold ">
           Power Innovation with Scalable Solutions
         </h1>
-        <p className="w-1/2">
+        <p className="text-left w-full sm:w-1/2">
           From web and mobile app development to UI/UX design and ongoing
           support, we deliver exceptional services to help businesses grow,stay
           and be seen.
