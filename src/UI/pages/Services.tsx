@@ -3,11 +3,17 @@ import { services } from '@/constants/services'
 
 export function Services() {
   return (
-    <div className="container grid gap-4">
-      <div>
-        <h1 className="text-5xl font-bold pt-12">
-          Our Services <span className="text-primary">.</span>
+    <div className="container grid">
+      <div className=" flex flex-col gap-2 justify-center items-center text-center pt-12">
+        <p className="font-bold text-xl text-primary">Our Services</p>
+        <h1 className="text-5xl font-bold ">
+          Power Innovation with Scalable Solutions
         </h1>
+        <p className="w-1/2">
+          From web and mobile app development to UI/UX design and ongoing
+          support, we deliver exceptional services to help businesses grow,stay
+          and be seen.
+        </p>
       </div>
       <div className=" py-12 grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full">
         <WobbleCard

@@ -14,7 +14,7 @@ import { Badge } from '../shadcn/ui/badge'
 export function Projects() {
   return (
     <div className="container">
-      <h2 className="font-bold text-5xl mb-4">
+      <h2 className="font-bold text-5xl mb-8">
         Our Past Works<span className="text-primary">.</span>
       </h2>
       <div className="h-[40rem] w-full grid md:grid-cols-2 lg:grid-cols-3 gap-16">
@@ -40,21 +40,19 @@ export function Projects() {
                   className="rounded-lg object-fit"
                 />
               </CardContent>
-              <CardFooter className=" pt-4">
-                <div className="flex gap-2">
-                  <a href={project.link} target="_blank">
-                    <Button
-                      variant="default"
-                      disabled={!project.link}
-                      size={'sm'}
-                    >
-                      View Live
-                      <span className="p-2">
-                        <Globe />
-                      </span>
-                    </Button>
-                  </a>
-                </div>
+              <CardFooter className="pt-4">
+                <a href={project.link} target="_blank">
+                  <Button
+                    variant="default"
+                    disabled={!project.link}
+                    size={'sm'}
+                  >
+                    View Live
+                    <span className="p-2">
+                      <Globe />
+                    </span>
+                  </Button>
+                </a>
               </CardFooter>
             </Card>
           </div>
