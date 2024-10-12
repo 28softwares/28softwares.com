@@ -1,3 +1,4 @@
+import TopProduct from '../molecules/TopProduct'
 import { Contact } from './Contact'
 import { Hero } from './Hero'
 import { Layout } from './Layout'
@@ -5,9 +6,10 @@ import { Layout } from './Layout'
 export const Home = () => {
   return (
     <Layout>
-      <div className="min-h-screen overflow-hidden">
+      <div className="container p-8 min-h-screen overflow-hidden">
         <Hero />
         {/* Top 1 Product showcase section  */}
+        <TopProduct />
         <Contact />
       </div>
     </Layout>

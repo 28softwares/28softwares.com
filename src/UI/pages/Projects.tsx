@@ -1,32 +1,11 @@
 import { PinContainer } from '@/UI/aceternity/3d-pin'
-import images from '@/constants/image.constant'
-import { Layout } from './Layout'
+import { projectList } from '@/constants/projects'
 
 export function Projects() {
-  const projectList = [
-    {
-      title: 'Uniplan',
-      description:
-        'AI based Mobile App for teachers for creating and sharing curriculum and lesson plans.',
-      type: 'Mobile Application',
-      link: 'https://play.google.com/store/apps/details?id=com.uniplan',
-      image: images.uniplanLogo,
-      year: 2024,
-    },
-    {
-      title: 'Investiaa',
-      description:
-        'An online ecosystem for startups, connecting incubators, angel investors, venture capitalists, and academia for seamless access and growth.',
-      link: 'https://www.investiaa.com/',
-      type: 'Web Application',
-      image: images.investiaaLogo,
-      year: 2024,
-    },
-  ]
   return (
     <div className="container">
       <h2 className="font-bold text-5xl  p-8">
-        Projects<span className="text-primary">.</span>
+        Our Past Works<span className="text-primary">.</span>
       </h2>
       <div className="h-[40rem] w-full grid md:grid-cols-2 lg:grid-cols-3 gap-16">
         {projectList.map((project) => (
