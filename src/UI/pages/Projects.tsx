@@ -1,33 +1,62 @@
-import { PinContainer } from '@/UI/aceternity/3d-pin'
 import { projectList } from '@/constants/projects'
+import { Globe } from 'lucide-react'
+import { Button } from '../shadcn/ui/button'
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+} from '../shadcn/ui/card'
+import { Badge } from '../shadcn/ui/badge'
 
 export function Projects() {
   return (
     <div className="container">
-      <h2 className="font-bold text-5xl  p-8">
+      <h2 className="font-bold text-5xl mb-4">
         Our Past Works<span className="text-primary">.</span>
       </h2>
       <div className="h-[40rem] w-full grid md:grid-cols-2 lg:grid-cols-3 gap-16">
-        {projectList.map((project) => (
+        {projectList.map((project, index) => (
           <div>
-            <PinContainer
-              title={project.link}
-              href={project.link}
-              containerClassName="-left-[8%]"
+            <Card
+              className="w-[420px] static h-[420px] flex flex-col justify-between bg-secondary"
+              key={index}
             >
-              <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
-                <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
+              <CardHeader key={index}>
+                <CardTitle className="flex justify-between">
                   {project.title}
-                </h3>
-                <div className="text-base !m-0 !p-0 font-normal">
-                  <span className="text-slate-500 ">{project.description}</span>
+                  <p className="text-sm">
+                    <Badge>{project.type}</Badge>
+                  </p>
+                </CardTitle>
+                <CardDescription>{project.description}</CardDescription>
+              </CardHeader>
+              <CardContent className="overflow-hidden p-4 object-contain">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="rounded-lg object-fit"
+                />
+              </CardContent>
+              <CardFooter className=" pt-4">
+                <div className="flex gap-2">
+                  <a href={project.link} target="_blank">
+                    <Button
+                      variant="default"
+                      disabled={!project.link}
+                      size={'sm'}
+                    >
+                      View Live
+                      <span className="p-2">
+                        <Globe />
+                      </span>
+                    </Button>
+                  </a>
                 </div>
-
-                <div className="flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br from-violet-500 via-purple-500 to-blue-500 ">
-                  <img src={project.image} className="object-cover " />
-                </div>
-              </div>
-            </PinContainer>
+              </CardFooter>
+            </Card>
           </div>
         ))}
       </div>

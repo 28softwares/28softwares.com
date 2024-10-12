@@ -1,4 +1,4 @@
-import { ArrowUpRight, AwardIcon, FlameIcon } from 'lucide-react'
+import { ArrowUpRight, AwardIcon } from 'lucide-react'
 import { Button } from '@/UI/shadcn/ui/button'
 import { Checkbox } from '../shadcn/ui/checkbox'
 
@@ -24,7 +24,10 @@ export const TopProduct = () => {
         >
           <AwardIcon /> Our #1 Sold Product
         </Button>
-        <Button className="flex items-center gap-2 hover:-translate-y-2 hover:translate-x-2">
+        <Button
+          variant={'ghost'}
+          className="text-primary flex items-center gap-2 hover:-translate-y-2 hover:translate-x-2"
+        >
           View All <ArrowUpRight />
         </Button>
       </div>

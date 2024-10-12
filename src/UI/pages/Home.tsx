@@ -1,4 +1,4 @@
-import TopProduct from '../molecules/TopProduct'
+import TopProduct from '../organisms/TopProduct'
 import { Contact } from './Contact'
 import { Hero } from './Hero'
 import { Layout } from './Layout'
