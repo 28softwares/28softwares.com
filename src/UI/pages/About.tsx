@@ -29,30 +29,18 @@ export const About = () => {
                 <CardContent className="p-4">
                   <h3 className="text-xl font-semibold">{member.name}</h3>
                   <p className="text-muted-foreground">{member.role}</p>
-                  <div className="mt-4 flex space-x-4">
-                    <Button variant="ghost" size="icon" asChild>
-                      <a
-                        href={member.linkedin}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:text-blue-800"
-                      >
-                        <Linkedin className="w-5 h-5" />
-                        <span className="sr-only">LinkedIn</span>
-                      </a>
-                    </Button>
-                    <Button variant="ghost" size="icon" asChild>
-                      <a
-                        href={member.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-foreground hover:text-muted-foreground"
-                      >
-                        <Github className="w-5 h-5" />
-                        <span className="sr-only">GitHub</span>
-                      </a>
-                    </Button>
-                  </div>
+                  {member.projectsInvolved.length > 0 && (
+                    <div className="mt-4 flex  flex-col space-x-4">
+                      Projects Involved :
+                      <div className="flex gap-1">
+                        {member.projectsInvolved.map((project, index) => (
+                          <Button variant="secondary" key={index}>
+                            {project}
+                          </Button>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}
