@@ -1,38 +1,36 @@
 interface Member {
   name: string
   role: string
+  projectsInvolved: string[]
   image: string
-  linkedin: string
-  github: string
 }
+
+const baseURL =
+  'https://raw.githubusercontent.com/28softwares/28softwares.com--assets/refs/heads/main/images/members/'
 
 export const members: Member[] = [
   {
-    name: 'Jane Doe',
+    name: 'Sushil Gyawali',
+    role: 'Mobile App Developer',
+    projectsInvolved: ['Uniplan'],
+    image: `${baseURL}/SushilGyawali_MobileAppDeveloper.png`,
+  },
+  {
+    name: 'Grishmin Karki',
     role: 'Frontend Developer',
-    image: '/placeholder.svg?height=400&width=400',
-    linkedin: 'https://www.linkedin.com/in/janedoe',
-    github: 'https://github.com/janedoe',
+    projectsInvolved: [],
+    image: `${baseURL}/GrishminKarki_FrontendDeveloper.png`,
   },
   {
-    name: 'John Smith',
-    role: 'Backend Developer',
-    image: '/placeholder.svg?height=400&width=400',
-    linkedin: 'https://www.linkedin.com/in/johnsmith',
-    github: 'https://github.com/johnsmith',
+    name: 'Simon Chaudhary',
+    role: 'Mobile App Developer',
+    projectsInvolved: [],
+    image: `${baseURL}/SimonChaudhary_BackendDeveloper.png`,
   },
   {
-    name: 'Emily Brown',
-    role: 'UX Designer',
-    image: '/placeholder.svg?height=400&width=400',
-    linkedin: 'https://www.linkedin.com/in/emilybrown',
-    github: 'https://github.com/emilybrown',
-  },
-  {
-    name: 'Michael Johnson',
-    role: 'Project Manager',
-    image: '/placeholder.svg?height=400&width=400',
-    linkedin: 'https://www.linkedin.com/in/michaeljohnson',
-    github: 'https://github.com/michaeljohnson',
+    name: 'Nirmal Neupane',
+    role: 'Fullstack Developer',
+    projectsInvolved: [],
+    image: `${baseURL}/NirmalNeupane_FullStackDeveloper.png`,
   },
 ]
