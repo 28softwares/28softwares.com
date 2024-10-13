@@ -1,6 +1,5 @@
 import { PinContainer } from '@/UI/aceternity/3d-pin'
 import images from '@/constants/image.constant'
-import { Layout } from './Layout'
 
 export function Projects() {
   const projectList = [
