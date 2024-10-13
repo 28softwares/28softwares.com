@@ -13,7 +13,7 @@ import { Badge } from '../shadcn/ui/badge'
 
 export function Projects() {
   return (
-    <div className="container">
+    <div className="container pt-36">
       <h2 className="font-bold text-5xl mb-8">
         Our Past Works<span className="text-primary">.</span>
       </h2>
@@ -21,17 +21,19 @@ export function Projects() {
         {projectList.map((project, index) => (
           <div>
             <Card
-              className="max-w-[420px] static h-[420px] flex flex-col justify-between bg-secondary"
+              className="max-w-[420px] static h-[420px] flex flex-col justify-between bg-primary"
               key={index}
             >
               <CardHeader key={index}>
-                <CardTitle className="flex justify-between">
+                <CardTitle className="flex justify-between text-black">
                   {project.title}
                   <p className="text-sm">
-                    <Badge>{project.type}</Badge>
+                    <Badge variant={'secondary'}>{project.type}</Badge>
                   </p>
                 </CardTitle>
-                <CardDescription>{project.description}</CardDescription>
+                <CardDescription className="text-black">
+                  {project.description}
+                </CardDescription>
               </CardHeader>
               <CardContent className="overflow-hidden p-4 object-contain">
                 <img
@@ -43,7 +45,7 @@ export function Projects() {
               <CardFooter className="pt-4">
                 <a href={project.link} target="_blank">
                   <Button
-                    variant="default"
+                    variant="secondary"
                     disabled={!project.link}
                     size={'sm'}
                   >

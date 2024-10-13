@@ -8,7 +8,7 @@ import { faqs } from '@/constants/faqs'
 
 export function Faq() {
   return (
-    <div className="p-8 container">
+    <div className="p-8  pt-36 container">
       <div>
         <h1 className="text-5xl font-bold  pb-8">
           Frequently Asked Questions<span className="text-primary">.</span>

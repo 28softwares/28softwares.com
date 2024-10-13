@@ -3,7 +3,7 @@ import { services } from '@/constants/services'
 
 export function Services() {
   return (
-    <div className="container grid">
+    <div className="container grid min-h-screen">
       <div className=" flex flex-col gap-2  md:justify-center items-start md:items-center text-center pt-12">
         <p className="font-bold text-xl text-primary">Our Services</p>
         <h1 className="text-left  text-lg lg:text-5xl font-bold ">
