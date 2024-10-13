@@ -1,6 +1,6 @@
 import { Button } from '@/UI/shadcn/ui/button'
 import { CheckCircle, ChevronRight } from 'lucide-react'
-import { productsData } from '@/constants/products'
+import { productsData } from '@/constants/data/products'
 import { useEffect } from 'react'
 
 export function ProductsPage() {

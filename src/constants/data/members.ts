@@ -18,19 +18,19 @@ export const members: Member[] = [
   {
     name: 'Grishmin Karki',
     role: 'Frontend Developer',
-    projectsInvolved: [],
+    projectsInvolved: ['A to Z Ecommerce'],
     image: `${baseURL}/GrishminKarki_FrontendDeveloper.png`,
   },
   {
     name: 'Simon Chaudhary',
     role: 'Mobile App Developer',
-    projectsInvolved: [],
+    projectsInvolved: ['Investiaa'],
     image: `${baseURL}/SimonChaudhary_BackendDeveloper.png`,
   },
   {
     name: 'Nirmal Neupane',
     role: 'Fullstack Developer',
-    projectsInvolved: [],
+    projectsInvolved: ['Investiaa', 'UniPlan'],
     image: `${baseURL}/NirmalNeupane_FullStackDeveloper.png`,
   },
 ]

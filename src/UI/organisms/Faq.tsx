@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/UI/shadcn/ui/accordion'
-import { faqs } from '@/constants/faqs'
+import { faqs } from '@/constants/data/faqs'
 
 export function Faq() {
   return (

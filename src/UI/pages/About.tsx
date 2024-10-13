@@ -1,7 +1,7 @@
 import { Button } from '../shadcn/ui/button'
 import { Card, CardHeader, CardContent } from '../shadcn/ui/card'
 import { Layout } from './Layout'
-import { members } from '@/constants/members'
+import { members } from '@/constants/data/members'
 
 export const About = () => {
   return (
@@ -9,7 +9,7 @@ export const About = () => {
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">
-            Amazing peoples who have working/worked with us
+            Amazing peoples who are/have working/worked with us
             <span className="text-primary">.</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

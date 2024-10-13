@@ -1,4 +1,4 @@
-import { companyDataConstants } from '@/constants/companyData.constant'
+import { companyDataConstants } from '@/constants/data/companyData.constant'
 import { MapPin } from 'lucide-react'
 import { navLinks } from '@/constants/navlinks'
 import { Link } from '@tanstack/react-router'
@@ -12,10 +12,11 @@ export const Footer = () => {
             28Softwares Pvt. Ltd.
           </h2>
           <article>Building tomorrows digital experience today.</article>
-          <p>{companyDataConstants.address}</p>
+
           <p className="flex gap-2">
             <MapPin className="size-5" />
-            Nepal
+            <p>{companyDataConstants.address}</p>,{' '}
+            {companyDataConstants.country}
           </p>
         </div>
 
