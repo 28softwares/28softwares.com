@@ -14,7 +14,7 @@ import { Route as rootRoute } from './routes/__root'
 import { Route as ServicesRouteImport } from './routes/services.route'
 import { Route as ProjectsRouteImport } from './routes/projects.route'
 import { Route as ProductsRouteImport } from './routes/products.route'
-import { Route as FaqsRouteImport } from './routes/faqs.route'
+import { Route as AboutRouteImport } from './routes/about.route'
 import { Route as IndexRouteImport } from './routes/index.route'
 
 // Create/Update Routes
@@ -34,8 +34,8 @@ const ProductsRouteRoute = ProductsRouteImport.update({
   getParentRoute: () => rootRoute,
 } as any)
 
-const FaqsRouteRoute = FaqsRouteImport.update({
-  path: '/faqs',
+const AboutRouteRoute = AboutRouteImport.update({
+  path: '/about',
   getParentRoute: () => rootRoute,
 } as any)
 
@@ -55,11 +55,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRoute
     }
-    '/faqs': {
-      id: '/faqs'
-      path: '/faqs'
-      fullPath: '/faqs'
-      preLoaderRoute: typeof FaqsRouteImport
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRoute
     }
     '/products': {
@@ -90,7 +90,7 @@ declare module '@tanstack/react-router' {
 
 export const routeTree = rootRoute.addChildren({
   IndexRouteRoute,
-  FaqsRouteRoute,
+  AboutRouteRoute,
   ProductsRouteRoute,
   ProjectsRouteRoute,
   ServicesRouteRoute,
@@ -105,7 +105,7 @@ export const routeTree = rootRoute.addChildren({
       "filePath": "__root.tsx",
       "children": [
         "/",
-        "/faqs",
+        "/about",
         "/products",
         "/projects",
         "/services"
@@ -114,8 +114,8 @@ export const routeTree = rootRoute.addChildren({
     "/": {
       "filePath": "index.route.tsx"
     },
-    "/faqs": {
-      "filePath": "faqs.route.tsx"
+    "/about": {
+      "filePath": "about.route.tsx"
     },
     "/products": {
       "filePath": "products.route.tsx"
