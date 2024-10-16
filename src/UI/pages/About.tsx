@@ -28,9 +28,9 @@ export const About = () => {
                   <h3 className="text-xl font-semibold">{member.name}</h3>
                   <p className="text-muted-foreground">{member.role}</p>
                   {member.projectsInvolved.length > 0 && (
-                    <div className="mt-4 flex  flex-col space-x-4">
-                      Projects Involved :
-                      <div className="flex gap-1">
+                    <div className="mt-4 flex flex-col space-y-2">
+                      <p>Projects Involved :</p>
+                      <div className="flex gap-2">
                         {member.projectsInvolved.map((project, index) => (
                           <Button variant="secondary" key={index}>
                             {project}
