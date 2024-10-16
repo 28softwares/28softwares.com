@@ -7,13 +7,12 @@ import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/services')({
   component: () => (
-    <div>
+    <>
       <Layout>
-        <Services />
-        <Projects />
+        <Services /> <Projects />
         <Faq />
         <Contact />
       </Layout>
-    </div>
+    </>
   ),
 })
