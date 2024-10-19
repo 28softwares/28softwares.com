@@ -1,4 +1,3 @@
-import { Button } from '../shadcn/ui/button'
 import { Card, CardHeader, CardContent } from '../shadcn/ui/card'
 import { Layout } from './Layout'
 import { members } from '@/constants/data/members'
@@ -27,18 +26,9 @@ export const About = () => {
                 <CardContent className="p-4">
                   <h3 className="text-xl font-semibold">{member.name}</h3>
                   <p className="text-muted-foreground">{member.role}</p>
-                  {member.projectsInvolved.length > 0 && (
-                    <div className="mt-4 flex  flex-col space-x-4">
-                      Projects Involved :
-                      <div className="flex gap-1">
-                        {member.projectsInvolved.map((project, index) => (
-                          <Button variant="secondary" key={index}>
-                            {project}
-                          </Button>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                  <span title="Points is no.of involved projects">
+                    Points :&nbsp;{member.projectsInvolved.length}
+                  </span>
                 </CardContent>
               </Card>
             ))}

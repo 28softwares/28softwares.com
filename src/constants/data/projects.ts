@@ -1,5 +1,10 @@
 import images from '@/constants/image.constant'
 
+export enum projectNames {
+  'UNIPLAN' = 'Uniplan',
+  'INVESTIAA' = 'Investiaa',
+  'A_TO_Z_ECOMMERCE' = 'A to Z Ecommerce',
+}
 export const projectList = [
   {
     title: 'Uniplan',
