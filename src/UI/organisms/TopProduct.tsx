@@ -59,12 +59,12 @@ export default function TopProduct() {
                 ))}
               </div>
             </CardContent>
-            <CardFooter className="flex flex-col sm:flex-row gap-4 p-4 md:p-6">
-              <Button variant="secondary" className="group w-full sm:w-auto">
+            <CardFooter className="flex flex-col xl:flex-row gap-4 p-4 md:p-6">
+              <Button variant="secondary" className="group w-full xl:w-auto">
                 Request for Demo
                 <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button className="group w-full sm:w-auto">
+              <Button className="group w-full xl:w-auto">
                 Request for Quotation
                 <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
