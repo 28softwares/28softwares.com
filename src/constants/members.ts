@@ -1,3 +1,6 @@
+import { ImageConstants } from './image.constant'
+import { projectNames } from './projects'
+
 interface Member {
   name: string
   role: string
@@ -5,46 +8,45 @@ interface Member {
   image: string
 }
 
-const baseURL =
-  'https://raw.githubusercontent.com/28softwares/28softwares.com--assets/refs/heads/main/images/members/'
-
-export const members: Member[] = [
+const members: Member[] = [
   {
     name: 'Sushil Gyawali',
     role: 'Mobile App Developer',
-    projectsInvolved: ['Uniplan'],
-    image: `${baseURL}/SushilGyawali_MobileAppDeveloper.png`,
+    projectsInvolved: [projectNames.UNIPLAN],
+    image: ImageConstants.MEMBERS.sushilGyawali,
   },
   {
     name: 'Grishmin Karki',
     role: 'Frontend Developer',
-    projectsInvolved: [],
-    image: `${baseURL}/GrishminKarki_FrontendDeveloper.png`,
+    projectsInvolved: [projectNames.A_TO_Z_ECOMMERCE],
+    image: ImageConstants.MEMBERS.grishminKarki,
   },
   {
     name: 'Simon Chaudhary',
-    role: 'Mobile App Developer',
-    projectsInvolved: [],
-    image: `${baseURL}/SimonChaudhary_BackendDeveloper.png`,
+    role: 'Backend Developer',
+    projectsInvolved: [projectNames.INVESTIAA],
+    image: ImageConstants.MEMBERS.simonChaudhary,
   },
   {
     name: 'Nirmal Neupane',
     role: 'Fullstack Developer',
-    projectsInvolved: [],
-    image: `${baseURL}/NirmalNeupane_FullStackDeveloper.png`,
+    projectsInvolved: [projectNames.INVESTIAA, projectNames.A_TO_Z_ECOMMERCE],
+    image: ImageConstants.MEMBERS.nirmalNeupane,
   },
   {
     name: 'Sony Sharma',
     role: 'Marketing and QA',
     projectsInvolved: [],
-    image: `${baseURL}/SonySharma_Marketing_and_QA.png`,
+    image: ImageConstants.MEMBERS.sonySharma,
   },
   {
     name: 'Tej Bahadur Gharti Kshetri',
     role: 'Frontend Developer',
-    projectsInvolved: [],
-    image:
-      'https://i.pinimg.com/736x/28/f9/7b/28f97b7bc3948e43449b4001c0fe89a7.jpg',
-    // image: `${baseURL}/TejKshetri_Frontend_Developer.png`,
+    projectsInvolved: [projectNames.A_TO_Z_ECOMMERCE],
+    image: ImageConstants.MEMBERS.tejGharti,
   },
 ]
+
+members.sort((a, b) => b.projectsInvolved.length - a.projectsInvolved.length)
+
+export { members }
