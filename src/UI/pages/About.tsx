@@ -26,8 +26,12 @@ export const About = () => {
                 <CardContent className="p-4">
                   <h3 className="text-xl font-semibold">{member.name}</h3>
                   <p className="text-muted-foreground">{member.role}</p>
-                  <span title="Points is no.of involved projects">
-                    Points :&nbsp;{member.projectsInvolved.length}
+                  No.of Involved Projects &nbsp;
+                  <span
+                    title="Points is no.of involved projects"
+                    className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+                  >
+                    {member.projectsInvolved.length}
                   </span>
                 </CardContent>
               </Card>

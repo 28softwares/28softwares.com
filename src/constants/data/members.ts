@@ -1,3 +1,4 @@
+import { ImageConstants } from '../image.constant'
 import { projectNames } from './projects'
 
 interface Member {
@@ -7,33 +8,36 @@ interface Member {
   image: string
 }
 
-const baseURL =
-  'https://raw.githubusercontent.com/28softwares/28softwares.com--assets/refs/heads/main/images/members/'
-
 const members: Member[] = [
   {
     name: 'Sushil Gyawali',
     role: 'Mobile App Developer',
     projectsInvolved: [projectNames.UNIPLAN],
-    image: `${baseURL}/SushilGyawali_MobileAppDeveloper.png`,
+    image: ImageConstants.MEMBERS.sushilGyawali,
   },
   {
     name: 'Grishmin Karki',
     role: 'Frontend Developer',
     projectsInvolved: [projectNames.A_TO_Z_ECOMMERCE],
-    image: `${baseURL}/GrishminKarki_FrontendDeveloper.png`,
+    image: ImageConstants.MEMBERS.grishminKarki,
   },
   {
     name: 'Simon Chaudhary',
     role: 'Mobile App Developer',
     projectsInvolved: [projectNames.INVESTIAA],
-    image: `${baseURL}/SimonChaudhary_BackendDeveloper.png`,
+    image: ImageConstants.MEMBERS.simonChaudhary,
   },
   {
     name: 'Nirmal Neupane',
     role: 'Fullstack Developer',
     projectsInvolved: [projectNames.INVESTIAA, projectNames.A_TO_Z_ECOMMERCE],
-    image: `${baseURL}/NirmalNeupane_FullStackDeveloper.png`,
+    image: ImageConstants.MEMBERS.nirmalNeupane,
+  },
+  {
+    name: 'Prayukta Mishra',
+    role: 'UI/UX Designer',
+    projectsInvolved: [projectNames.A_TO_Z_ECOMMERCE],
+    image: ImageConstants.MEMBERS.prayuktaMishra,
   },
 ]
 members.sort((a, b) => b.projectsInvolved.length - a.projectsInvolved.length)
