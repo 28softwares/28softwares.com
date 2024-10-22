@@ -43,6 +43,8 @@ export const members: Member[] = [
     name: 'Tej Bahadur Gharti Kshetri',
     role: 'Frontend Developer',
     projectsInvolved: [],
-    image: `${baseURL}/TejKshetri_Frontend_Developer.png`,
+    image:
+      'https://i.pinimg.com/736x/28/f9/7b/28f97b7bc3948e43449b4001c0fe89a7.jpg',
+    // image: `${baseURL}/TejKshetri_Frontend_Developer.png`,
   },
 ]
