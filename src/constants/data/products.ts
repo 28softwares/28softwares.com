@@ -3,26 +3,16 @@ export const productsData = [
     id: 1,
     title: 'Ecommerce',
     features: [
+      'Create/Mange Products',
       'Multiple Admin Management',
-      'Inventory Tracking',
+      'Order Tracking',
       'Order Processing',
       'Customer Management',
       'Analytics Dashboard',
+      'Export data to Excel',
+      'Payment via Stripe/Khalti/Esewa',
     ],
     image:
       'https://cdn.pixabay.com/photo/2019/04/26/07/14/store-4156934_1280.png',
-  },
-  {
-    id: 2,
-    title: 'AIS (Advanced Inventory System)',
-    features: [
-      'Real-time Stock Updates',
-      'Barcode Scanning',
-      'Supplier Management',
-      'Automated Reordering',
-      'Multi-location Support',
-    ],
-    image:
-      'https://cdn.pixabay.com/photo/2024/05/07/00/39/schedule-8744592_1280.png',
   },
 ]

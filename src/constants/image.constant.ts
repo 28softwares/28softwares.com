@@ -8,6 +8,8 @@ export class ImageConstants {
     simonChaudhary: `${this.baseURL}/members/SimonChaudhary_BackendDeveloper.png`,
     nirmalNeupane: `${this.baseURL}/members/NirmalNeupane_FullStackDeveloper.png`,
     prayuktaMishra: `${this.baseURL}/members/PrayuktaMishra_UI_UXDesigner.png`,
+    tejGharti: `${this.baseURL}/members/TejGharti_FrontendDeveloper.png`,
+    sonySharma: `${this.baseURL}/members/SonySharma_Marketing_and_QA.png`,
   }
 
   public static readonly PROJECTS = {

@@ -5,9 +5,10 @@ export enum projectNames {
   'INVESTIAA' = 'Investiaa',
   'A_TO_Z_ECOMMERCE' = 'A to Z Ecommerce',
 }
+
 export const projectList = [
   {
-    title: 'Uniplan',
+    title: projectNames.UNIPLAN,
     description:
       'AI based Mobile App for teachers for creating and sharing curriculum and lesson plans.',
     type: 'Mobile Application',
@@ -16,12 +17,21 @@ export const projectList = [
     year: 2024,
   },
   {
-    title: 'Investiaa',
+    title: projectNames.INVESTIAA,
     description:
       'An online ecosystem for startups, connecting incubators, angel investors, venture capitalists, and academia for seamless access and growth.',
     link: 'https://www.investiaa.com/',
     type: 'Web Application',
     image: ImageConstants.PROJECTS.investiaa,
+    year: 2024,
+  },
+  {
+    title: projectNames.A_TO_Z_ECOMMERCE,
+    description:
+      'An end-to-end e-commerce platform for small businesses to sell their products online.',
+    link: 'https://atozcleaningsupplies.com.au/',
+    type: 'Web Application',
+    image: 'https://atozcleaningsupplies.com.au/assets/white-logo-CVYLiP2S.png',
     year: 2024,
   },
 ]

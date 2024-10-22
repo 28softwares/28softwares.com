@@ -13,8 +13,8 @@ export function ProductsPage() {
   return (
     <div className="min-h-screen p-4 sm:p-6 md:p-8">
       <center>
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-primary text-black mb-10">
-          Our 28 Softwares
+        <h1 className="text-4xl sm:text-2xl md:text-6xl font-bold  bg-primary text-black mb-10  rounded-md cursor-pointer">
+          List of 28 Softwares
         </h1>
       </center>
       <div className="max-w-6xl mx-auto space-y-12 sm:space-y-16 md:space-y-24">
@@ -30,6 +30,9 @@ export function ProductsPage() {
                 index % 2 === 1 ? 'md:col-start-2' : ''
               }`}
             >
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+                {index + 1} <span className="text-primary">.</span>
+              </h1>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
                 {product.title}
               </h2>
