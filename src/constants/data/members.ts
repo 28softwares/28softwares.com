@@ -23,7 +23,7 @@ const members: Member[] = [
   },
   {
     name: 'Simon Chaudhary',
-    role: 'Mobile App Developer',
+    role: 'Backend Developer',
     projectsInvolved: [projectNames.INVESTIAA],
     image: ImageConstants.MEMBERS.simonChaudhary,
   },
