@@ -35,7 +35,7 @@ export default function TopProduct() {
           <Link to="/products">
             <Button
               variant="secondary"
-              className="group text-primary flex items-center gap-2"
+              className="group text-black hover:text-primary flex items-center gap-2"
             >
               View All
               <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
