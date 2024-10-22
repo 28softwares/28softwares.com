@@ -1,5 +1,5 @@
-import { ImageConstants } from '../image.constant'
 import { projectNames } from './projects'
+import { ImageConstants } from '../image.constant'
 
 interface Member {
   name: string
@@ -34,12 +34,25 @@ const members: Member[] = [
     image: ImageConstants.MEMBERS.nirmalNeupane,
   },
   {
+    name: 'Sony Sharma',
+    role: 'Marketing and QA',
+    projectsInvolved: [projectNames.A_TO_Z_ECOMMERCE],
+    image: ImageConstants.MEMBERS.sonySharma,
+  },
+  {
+    name: 'Tej Bahadur Gharti Kshetri',
+    role: 'Frontend Developer',
+    projectsInvolved: [projectNames.A_TO_Z_ECOMMERCE],
+    image: ImageConstants.MEMBERS.tejGharti,
+  },
+  {
     name: 'Prayukta Mishra',
     role: 'UI/UX Designer',
     projectsInvolved: [projectNames.A_TO_Z_ECOMMERCE],
     image: ImageConstants.MEMBERS.prayuktaMishra,
   },
 ]
+
 members.sort((a, b) => b.projectsInvolved.length - a.projectsInvolved.length)
 
 export { members }
