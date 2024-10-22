@@ -33,4 +33,16 @@ export const members: Member[] = [
     projectsInvolved: [],
     image: `${baseURL}/NirmalNeupane_FullStackDeveloper.png`,
   },
+  {
+    name: 'Sony Sharma',
+    role: 'Marketing and QA',
+    projectsInvolved: [],
+    image: `${baseURL}/SonySharma_Marketing_and_QA.png`,
+  },
+  {
+    name: 'Tej Bahadur Gharti Kshetri',
+    role: 'Frontend Developer',
+    projectsInvolved: [],
+    image: `${baseURL}/TejKshetri_Frontend_Developer.png`,
+  },
 ]
