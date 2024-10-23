@@ -1,87 +1,163 @@
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import {
-  ArrowUpRight,
-  AwardIcon,
-  CheckCircle,
-  ChevronRight,
+  ShoppingCart,
+  Search,
+  Star,
+  Truck,
+  CreditCard,
+  Heart,
+  Package,
+  Medal,
 } from 'lucide-react'
-import { Button } from '@/UI/shadcn/ui/button'
-import { Card, CardContent, CardHeader, CardFooter } from '@/UI/shadcn/ui/card'
 import { Link } from '@tanstack/react-router'
+import { Button } from '../shadcn/ui/button'
 
-const topProduct = {
-  name: 'Ecommerce',
-  description:
-    'Ecommerce platforms provide easy navigation, detailed product info, customer reviews, and smooth transactions with various payment options and real-time inventory updates',
-  image:
-    'https://cdn.pixabay.com/photo/2020/08/03/10/00/laptop-5459712_1280.png',
-  features: [
-    'User-friendly navigation, search, and product filtering options, including site search, product filters, and footer navigation.',
-    'Rich product presentation with  reviews, wishlists, detailed descriptions, high-quality images, and pricing info with discounts.',
-    'Advanced shopping features like dynamic filters, automatic inventory updates, social share buttons, multiple payment/shipping methods, and shopping cart functionality.',
-  ],
-}
+export default function Component() {
+  const [isHovered, setIsHovered] = useState(false)
 
-export default function TopProduct() {
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsHovered((prev) => !prev)
+    }, 5000)
+    return () => clearInterval(interval)
+  }, [])
+
+  const iconVariants = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: { opacity: 1, scale: 1 },
+  }
+
   return (
-    <Card className="bg-background text-foreground ">
-      <CardHeader className="p-4 md:p-6 lg:p-8">
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-          <Button
-            variant="secondary"
-            className="rounded-full p-2 sm:p-4 text-base sm:text-lg flex items-center gap-2 sm:gap-4"
-          >
-            <AwardIcon className="w-4 h-4 sm:w-5 sm:h-5" /> Our #1 Sold Product
+    <div className="bg-gradient-to-br from-yellow-100 to-yellow-300 p-8 rounded-xl shadow-2xl max-w-6xl mx-auto">
+      <div className="flex justify-between items-center mb-8">
+        <h2 className="text-3xl font-bold flex items-center text-yellow-800">
+          <Medal className="mr-2" />
+          Our #1 Sold Product
+        </h2>
+        <Link to="/products">
+          <Button className="bg-yellow-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-yellow-600 transition-colors">
+            View All
           </Button>
-          <Link to="/products">
-            <Button
-              variant="secondary"
-              className="group text-black hover:text-primary flex items-center gap-2"
-            >
-              View All
-              <ArrowUpRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </Link>
-        </div>
-      </CardHeader>
-      <CardContent className="p-4 md:p-6 lg:p-8 pt-0">
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
-          <Card className="bg-card text-card-foreground">
-            <CardContent className="p-4 md:p-6">
-              <div className="grid gap-4">
-                <h3 className="text-sm sm:text-base lg:text-lg">
-                  {topProduct.description}
-                </h3>
-                {topProduct.features.map((feature, index) => (
-                  <div key={index} className="flex gap-4 items-start">
-                    <CheckCircle className="text-primary flex-shrink-0 mt-1 w-5 h-5" />
-                    <p className="text-sm sm:text-base lg:text-lg">{feature}</p>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-            <CardFooter className="flex flex-col sm:flex-row gap-4 p-4 md:p-6">
-              <Button variant="secondary" className="group w-full sm:w-auto">
-                Request for Demo
-                <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button className="group w-full sm:w-auto">
-                Request for Quotation
-                <ChevronRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </CardFooter>
-          </Card>
+        </Link>
+      </div>
 
-          <Card className="bg-primary overflow-hidden flex items-center justify-center">
-            <CardContent className="p-0">
-              <img
-                src={topProduct.image}
-                alt="Ecommerce Platform"
-                className="w-full h-auto object-contain"
-              />
-            </CardContent>
-          </Card>
+      <div className="grid md:grid-cols-2 gap-8">
+        <div className="space-y-6">
+          <p className="text-lg text-yellow-800">
+            Our top-selling e-commerce platform provides seamless navigation,
+            detailed product information, customer reviews, and smooth
+            transactions with various payment options and real-time inventory
+            updates.
+          </p>
+          <ul className="space-y-4">
+            {[
+              {
+                icon: Search,
+                text: 'User-friendly navigation with advanced search and filtering options',
+              },
+              {
+                icon: Star,
+                text: 'Rich product presentations featuring reviews, wishlists, and detailed descriptions',
+              },
+              {
+                icon: Truck,
+                text: 'Advanced shopping features including dynamic filters and real-time inventory updates',
+              },
+            ].map((item, index) => (
+              <motion.li
+                key={index}
+                className="flex items-start"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.2 }}
+              >
+                <item.icon className="text-yellow-600 mr-2 mt-1 flex-shrink-0" />
+                <span className="text-yellow-800">{item.text}</span>
+              </motion.li>
+            ))}
+          </ul>
+          <div className="flex space-x-4 mt-8">
+            <Button className="bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition-colors">
+              Request for Demo
+            </Button>
+            <Button className="bg-yellow-400 text-yellow-800 px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-colors">
+              Request for Quotation
+            </Button>
+          </div>
         </div>
-      </CardContent>
-    </Card>
+        <div className="relative h-[400px]">
+          <motion.div
+            className="absolute inset-0"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 50, repeat: Infinity, ease: 'linear' }}
+          >
+            {[ShoppingCart, Heart, CreditCard, Package].map((Icon, index) => (
+              <motion.div
+                key={index}
+                className="absolute"
+                style={{
+                  top: `${50 + 40 * Math.sin((index * Math.PI) / 2)}%`,
+                  left: `${50 + 40 * Math.cos((index * Math.PI) / 2)}%`,
+                }}
+                initial="hidden"
+                animate="visible"
+                variants={iconVariants}
+                transition={{ delay: index * 0.2, duration: 0.5 }}
+              >
+                <Icon className="text-yellow-600 h-12 w-12" />
+              </motion.div>
+            ))}
+          </motion.div>
+          <motion.div
+            className="absolute inset-0 flex items-center justify-center"
+            animate={{ scale: isHovered ? 1.1 : 1 }}
+            transition={{ type: 'spring', stiffness: 300 }}
+          >
+            <svg viewBox="0 0 200 200" className="w-64 h-64">
+              <defs>
+                <linearGradient
+                  id="laptopGradient"
+                  x1="0%"
+                  y1="0%"
+                  x2="100%"
+                  y2="100%"
+                >
+                  <stop offset="0%" stopColor="#FFD700" />
+                  <stop offset="100%" stopColor="#FFA500" />
+                </linearGradient>
+              </defs>
+              <motion.rect
+                x="40"
+                y="40"
+                width="120"
+                height="80"
+                rx="5"
+                fill="url(#laptopGradient)"
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                transition={{ duration: 2, ease: 'easeInOut' }}
+              />
+              <motion.path
+                d="M30,120 L170,120 L180,140 L20,140 Z"
+                fill="#FFD700"
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                transition={{ duration: 2, ease: 'easeInOut', delay: 0.5 }}
+              />
+              <motion.circle
+                cx="100"
+                cy="80"
+                r="20"
+                fill="#FFA500"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 1, type: 'spring', stiffness: 500 }}
+              />
+            </svg>
+          </motion.div>
+        </div>
+      </div>
+    </div>
   )
 }

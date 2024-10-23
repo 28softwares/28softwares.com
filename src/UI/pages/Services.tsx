@@ -9,7 +9,7 @@ export function Services() {
         <h1 className="text-left  text-lg lg:text-5xl font-bold ">
           Power Innovation with Scalable Solutions
         </h1>
-        <p className="text-left w-full sm:w-1/2">
+        <p className="text-left sm:text-center w-full sm:w-1/2">
           From web and mobile app development to UI/UX design and ongoing
           support, we deliver exceptional services to help businesses grow,stay
           and be seen.

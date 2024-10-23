@@ -15,8 +15,9 @@ export const Footer = () => {
 
           <p className="flex gap-2">
             <MapPin className="size-5" />
-            <p>{companyDataConstants.address}</p>,{' '}
-            {companyDataConstants.country}
+            <span>
+              {companyDataConstants.address}, {companyDataConstants.country}
+            </span>
           </p>
         </div>
 
