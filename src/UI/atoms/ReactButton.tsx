@@ -1,8 +1,8 @@
 type Props = {
-  tailwind_class: string;
-  label: string;
-  callback?: VoidFunction;
-};
+  tailwind_class: string
+  label: string
+  callback?: VoidFunction
+}
 export const RectButton = ({ tailwind_class, label, callback }: Props) => {
   return (
     <div>
@@ -13,5 +13,5 @@ export const RectButton = ({ tailwind_class, label, callback }: Props) => {
         {label}
       </button>
     </div>
-  );
-};
+  )
+}

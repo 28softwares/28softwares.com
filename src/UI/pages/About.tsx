@@ -1,12 +1,20 @@
-import { Button } from '../shadcn/ui/button'
 import { Card, CardHeader, CardContent } from '../shadcn/ui/card'
 import { Layout } from './Layout'
-import { members } from '@/constants/members'
-import { Contact } from './Contact'
+import { members } from '@/constants/data/members'
 
 export const About = () => {
   return (
     <Layout>
+      <div className="container mt-10">
+        <span className="text-primary text-4xl">The</span> named behind
+        28Softwares is that, we are making 28 different software products for
+        different areas (such as Hotel lines, schools, Hospitals etc.).
+        <br />
+        These softwares are generally MIS, ERP or CRM which are powered by
+        AI/ML. Besides our in house projects, we also work for
+        out-source/freelance projects doing Web Development, Mobile App
+        Development, and other software development services.
+      </div>
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className=" flex flex-col gap-2  md:justify-center items-start md:items-center text-center ">
@@ -39,26 +47,19 @@ export const About = () => {
                 <CardContent className="p-4">
                   <h3 className="text-xl font-semibold">{member.name}</h3>
                   <p className="text-muted-foreground">{member.role}</p>
-                  {member.projectsInvolved.length > 0 && (
-                    <div className="mt-4 flex  flex-col space-x-4">
-                      Projects Involved :
-                      <div className="flex gap-1">
-                        {member.projectsInvolved.map((project, index) => (
-                          <Button variant="secondary" key={index}>
-                            {project}
-                          </Button>
-                        ))}
-                      </div>
-                    </div>
-                  )}
+                  No.of Involved Projects &nbsp;
+                  <span
+                    title="Points is no.of involved projects"
+                    className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+                  >
+                    {member.projectsInvolved.length}
+                  </span>
                 </CardContent>
               </Card>
             ))}
           </div>
         </div>
       </section>
-
-      <Contact />
     </Layout>
   )
 }

@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import { projectList } from '@/constants/projects'
+import { projectList } from '@/constants/data/projects'
 import { Globe } from 'lucide-react'
 import { Button } from '../shadcn/ui/button'
 import {

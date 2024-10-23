@@ -1,11 +1,23 @@
 import { Button } from '@/UI/shadcn/ui/button'
 import { CheckCircle, ChevronRight } from 'lucide-react'
-import { productsData } from '@/constants/products'
+import { productsData } from '@/constants/data/products'
+import { useEffect } from 'react'
 
 export function ProductsPage() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }, [])
   return (
     <div className="min-h-screen p-4 sm:p-6 md:p-8">
-      <div className="max-w-6xl mx-auto space-y-12 sm:space-y-16 md:space-y-24">
+      <center>
+        <h1 className="text-4xl sm:text-2xl md:text-3xl font-bold  bg-primary text-black mb-10  rounded-md cursor-pointer w-1/3">
+          List of 28 Softwares
+        </h1>
+      </center>
+      <div className="max-w-6xl mx-auto space-y-12 sm:space-y-16 md:space-y-24 mt-10">
         {productsData.map((product, index) => (
           <div
             key={product.id}
@@ -18,6 +30,9 @@ export function ProductsPage() {
                 index % 2 === 1 ? 'md:col-start-2' : ''
               }`}
             >
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+                {index + 1} <span className="text-primary">.</span>
+              </h1>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
                 {product.title}
               </h2>

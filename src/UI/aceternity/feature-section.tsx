@@ -45,13 +45,13 @@ const Feature = ({
   return (
     <div
       className={cn(
-        'flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800',
+        'flex flex-col lg:border-r  py-10 relative group/feature dark:border-neutral-800 cursor-pointer',
         (index === 0 || index === 4) && 'lg:border-l dark:border-neutral-800',
         index < 4 && 'lg:border-b dark:border-neutral-800'
       )}
     >
       {index < 4 && (
-        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />
+        <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-t from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none " />
       )}
       {index >= 4 && (
         <div className="opacity-0 group-hover/feature:opacity-100 transition duration-200 absolute inset-0 h-full w-full bg-gradient-to-b from-neutral-100 dark:from-neutral-800 to-transparent pointer-events-none" />

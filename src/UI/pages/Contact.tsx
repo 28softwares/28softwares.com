@@ -1,4 +1,4 @@
-import { companyDataConstants } from '@/constants/companyData.constant'
+import { companyDataConstants } from '@/constants/data/companyData.constant'
 import { Input } from '@/UI/shadcn/ui/input'
 import { Button } from '@/UI/shadcn/ui/button'
 

@@ -1,6 +1,7 @@
-The named behind 28Softwares is that, we are making 28 different software products for different areas (such as Hotel lines, schools, Hospitals etc.). These softwares are generally MIS, ERP or CRM which are powered by AI/ML.
+## Assets Repo
 
-Besides our in house projects, we also work for out-source/freelance projects doing Web Development, Mobile App Development, and other software development services.
+[https://github.com/28softwares/28softwares.com--assets](https://github.com/28softwares/28softwares.com--assets)
+(All the assets files of this repo is stord in assets repo; and its url is pointed on this repo code)
 
 ## Tools Used for the website
 
