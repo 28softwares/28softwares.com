@@ -5,16 +5,6 @@ import { members } from '@/constants/data/members'
 export const About = () => {
   return (
     <Layout>
-      <div className="container mt-10">
-        <span className="text-primary text-4xl">The</span> named behind
-        28Softwares is that, we are making 28 different software products for
-        different areas (such as Hotel lines, schools, Hospitals etc.).
-        <br />
-        These softwares are generally MIS, ERP or CRM which are powered by
-        AI/ML. Besides our in house projects, we also work for
-        out-source/freelance projects doing Web Development, Mobile App
-        Development, and other software development services.
-      </div>
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className=" flex flex-col gap-2  md:justify-center items-start md:items-center text-center ">

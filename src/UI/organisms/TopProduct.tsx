@@ -35,7 +35,7 @@ export default function Component() {
           <Medal className="mr-2" />
           Our #1 Sold Product
         </h2>
-        <Link>
+        <Link to="/products">
           <Button className="bg-yellow-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-yellow-600 transition-colors">
             View All
           </Button>
