@@ -19,7 +19,7 @@ export const About = () => {
               Development, and other software development services.
             </p>
             <p className="text-left  text-lg lg:text-4xl font-bold pb-8">
-              Amazing People, working with us
+              Amazing peoples who are/have working/worked with us
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
