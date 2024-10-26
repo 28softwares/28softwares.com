@@ -20,7 +20,7 @@ export const services = {
   },
 
   mobileApplicationDevelopement: {
-    name: 'Mobile Application Developement',
+    name: 'Mobile Application Development',
     description:
       'We specialize in creating mobile applications tailored to your specific business needs, allowing customers to manage their profiles, track orders, and access services directly from their smartphones.',
     icon: <SmartphoneIcon />,
