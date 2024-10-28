@@ -36,17 +36,19 @@ export function ProductsPage() {
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
                 {product.title}
               </h2>
-              <ul className="space-y-2 sm:space-y-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
                 {product.features.map((feature, featureIndex) => (
-                  <li
-                    key={featureIndex}
-                    className="flex items-start space-x-2 sm:space-x-3"
-                  >
-                    <CheckCircle className="text-green-500 flex-shrink-0 mt-1 w-4 h-4 sm:w-5 sm:h-5" />
-                    <span className="text-sm sm:text-base">{feature}</span>
-                  </li>
+                  <>
+                    <li
+                      key={featureIndex}
+                      className="flex items-start space-x-2 sm:space-x-3"
+                    >
+                      <CheckCircle className="text-green-500 flex-shrink-0 mt-1 w-4 h-4 sm:w-5 sm:h-5" />
+                      <span className="text-sm sm:text-base">{feature}</span>
+                    </li>
+                  </>
                 ))}
-              </ul>
+              </div>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Button variant="secondary" className="group w-full sm:w-auto">
                   Request for Demo
@@ -71,6 +73,12 @@ export function ProductsPage() {
             </div>
           </div>
         ))}
+
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+          {productsData.length + 1}....{28} <br />
+          UNDER DEVELOPMENT
+          <span className="text-primary">.</span>
+        </h1>
       </div>
     </div>
   )
