@@ -93,6 +93,7 @@ export function ProductsPage() {
                 src={product.image}
                 alt={`${product.title} preview`}
                 className="w-full   h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>

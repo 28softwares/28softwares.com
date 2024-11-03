@@ -32,6 +32,7 @@ export const About = () => {
                     width={400}
                     height={400}
                     className="w-full h-64 object-cover"
+                    loading="lazy"
                   />
                 </CardHeader>
                 <CardContent className="p-4">
