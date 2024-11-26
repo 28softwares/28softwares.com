@@ -29,9 +29,9 @@ export default function Component() {
   }
 
   return (
-    <div className="bg-gradient-to-br from-yellow-100 to-yellow-300 p-8 rounded-xl shadow-2xl max-w-6xl mx-auto">
-      <div className="flex justify-between items-center mb-8">
-        <h2 className="text-3xl font-bold flex items-center text-yellow-800">
+    <div className="bg-gradient-to-br from-yellow-100 to-yellow-300 p-6 sm:p-8 rounded-xl shadow-2xl max-w-full sm:max-w-4xl lg:max-w-6xl mx-auto">
+      <div className="flex flex-col sm:flex-row justify-between items-center mb-6 sm:mb-8">
+        <h2 className="text-2xl sm:text-3xl font-bold flex items-center text-yellow-800 text-center sm:text-left">
           <Medal className="mr-2" />
           Our #1 Sold Product
         </h2>
@@ -42,9 +42,9 @@ export default function Component() {
         </Link>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
         <div className="space-y-6">
-          <p className="text-lg text-yellow-800">
+          <p className="text-base sm:text-lg text-yellow-800 text-center lg:text-left">
             Our top-selling e-commerce platform provides seamless navigation,
             detailed product information, customer reviews, and smooth
             transactions with various payment options and real-time inventory
@@ -77,16 +77,16 @@ export default function Component() {
               </motion.li>
             ))}
           </ul>
-          <div className="flex space-x-4 mt-8">
-            <Button className="bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition-colors">
+          <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 mt-6 sm:mt-8">
+            <Button className="bg-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-700 transition-colors w-full sm:w-auto">
               Request for Demo
             </Button>
-            <Button className="bg-yellow-400 text-yellow-800 px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-colors">
+            <Button className="bg-yellow-400 text-yellow-800 px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition-colors w-full sm:w-auto">
               Request for Quotation
             </Button>
           </div>
         </div>
-        <div className="relative h-[400px]">
+        <div className="relative h-[300px] sm:h-[400px]">
           <motion.div
             className="absolute inset-0"
             animate={{ rotate: 360 }}
@@ -105,7 +105,7 @@ export default function Component() {
                 variants={iconVariants}
                 transition={{ delay: index * 0.2, duration: 0.5 }}
               >
-                <Icon className="text-yellow-600 h-12 w-12" />
+                <Icon className="text-yellow-600 h-10 w-10 sm:h-12 sm:w-12" />
               </motion.div>
             ))}
           </motion.div>
@@ -114,7 +114,10 @@ export default function Component() {
             animate={{ scale: isHovered ? 1.1 : 1 }}
             transition={{ type: 'spring', stiffness: 300 }}
           >
-            <svg viewBox="0 0 200 200" className="w-64 h-64">
+            <svg
+              viewBox="0 0 200 200"
+              className="w-48 h-48 sm:w-64 sm:h-64"
+            >
               <defs>
                 <linearGradient
                   id="laptopGradient"

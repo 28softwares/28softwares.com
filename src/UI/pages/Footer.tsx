@@ -33,6 +33,7 @@ export const Footer = () => {
                 href={social.link}
                 target="_blank"
                 rel="noreferrer"
+                className='hover:underline'
               >
                 {social.name}
               </a>
