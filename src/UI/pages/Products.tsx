@@ -21,7 +21,7 @@ export function ProductsPage() {
   return (
     <div className="min-h-screen p-4 sm:p-6 md:p-8">
       <center>
-        <h1 className="text-4xl sm:text-2xl md:text-3xl font-bold  bg-primary text-black mb-10  rounded-md cursor-pointer w-1/3">
+        <h1 className="text-4xl sm:text-2xl md:text-3xl font-bold  bg-primary text-black mb-10  rounded-md cursor-pointer md:w-1/3 w-3/4">
           List of 28 Softwares
         </h1>
       </center>
