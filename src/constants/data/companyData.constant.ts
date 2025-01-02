@@ -1,6 +1,13 @@
 export const companyDataConstants = {
   name: '28Softwares',
-  address: 'Lokanthali, Bhaktapur',
+  address: {
+    nepal: {
+      city: 'Lokanthali, Bhaktapur',
+    },
+
+    australia: 'Melbourne, Victoria',
+  },
+
   country: 'Nepal',
   foundedYear: 2024,
   email: '28softwaresnp@gmail.com',

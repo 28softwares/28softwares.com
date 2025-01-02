@@ -1,5 +1,10 @@
 export const faqs = [
   {
+    question: "What is the name behind '28 Softwares",
+    answer:
+      "Since our Founder 'Saroj Dahal' has keen interst on spirituality, astrology, numerology related subjects. As from numerology, the number 2 is associated with balance, harmony, relationships, and diplomacy, while the number 8 represents abundance, success, and material wealth. Together, the number 28 is a powerful symbol of achievement, leadership, and financial prosperity. Also, the intention with 28 is that, we will be making 28 different software products for different areas (such as Hotel lines, schools, Hospitals etc.). These softwares are generally MIS, ERP or CRM which are powered by AI/ML. Besides our in house projects, we also work for out-source/freelance projects doing Web Development, Mobile App Development, and other software development services.",
+  },
+  {
     question: 'What is the typical timeline for developing a website?',
     answer:
       'The timeline for developing a website can vary based on the complexity and features required. A simple website may take 4-6 weeks, while a more complex site with custom features may take 8-12 weeks or longer. We work closely with you to establish a timeline that meets your needs.',
