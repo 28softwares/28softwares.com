@@ -16,7 +16,8 @@ export const Footer = () => {
           <p className="flex gap-2">
             <MapPin className="size-5" />
             <span>
-              {companyDataConstants.address}, {companyDataConstants.country}
+              {companyDataConstants.address.nepal.city},{' '}
+              {companyDataConstants.country}
             </span>
           </p>
         </div>
@@ -33,7 +34,7 @@ export const Footer = () => {
                 href={social.link}
                 target="_blank"
                 rel="noreferrer"
-                className='hover:underline'
+                className="hover:underline"
               >
                 {social.name}
               </a>
