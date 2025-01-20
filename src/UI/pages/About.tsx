@@ -1,3 +1,4 @@
+import { founders } from '@/constants/data/founders'
 import { Card, CardHeader, CardContent } from '../shadcn/ui/card'
 import { Layout } from './Layout'
 import { members } from '@/constants/data/members'
@@ -18,6 +19,35 @@ export const About = () => {
               out-source/freelance projects doing Web Development, Mobile App
               Development, and other software development services.
             </p>
+            {/* CEO/CTO Directo photo section */}
+            <p className="text-left  text-lg lg:text-4xl font-bold pb-8">
+              Meet our CEO/CTO and Director
+            </p>
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl w-full px-8">
+                {founders.map((founder, index) => (
+                  <Card key={index} className="overflow-hidden mx-auto">
+                    <CardHeader className="p-0">
+                      <img
+                        src={founder.image}
+                        alt={founder.name}
+                        width={400}
+                        height={400}
+                        className="w-full h-64 object-cover"
+                        loading="lazy"
+                      />
+                    </CardHeader>
+                    <CardContent className="p-4 text-center">
+                      <h3 className="text-xl font-semibold">{founder.name}</h3>
+                      <p className="text-muted-foreground">
+                        {founder.position}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
             <p className="text-left  text-lg lg:text-4xl font-bold pb-8">
               Amazing peoples who are/have working/worked with us
             </p>

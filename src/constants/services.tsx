@@ -1,8 +1,9 @@
 import {
+  CalendarDays,
+  GraduationCap,
   MonitorIcon,
   PaintbrushVertical,
   SmartphoneIcon,
-  WrenchIcon,
 } from 'lucide-react'
 
 export const services = {
@@ -26,10 +27,16 @@ export const services = {
     icon: <SmartphoneIcon />,
   },
 
-  maintenanceSupport: {
-    name: 'Maintenance & Support',
+  techConsulting: {
+    name: 'Tech Consulting',
     description:
-      'Providing ongoing support, updates, and maintenance services to ensure website performance and security.',
-    icon: <WrenchIcon />,
+      'Consulting services to individuals seeking their careers in IT, as well as to businesses looking to leverage technology for growth and innovation.',
+    icon: <GraduationCap />,
+  },
+  itEventsAndTrainings: {
+    name: 'IT Events and Trainings',
+    description:
+      'Conduct events and trainings to enhance individuals skill and help businesses leverage the latest technologies for competitive growth.',
+    icon: <CalendarDays />,
   },
 }
