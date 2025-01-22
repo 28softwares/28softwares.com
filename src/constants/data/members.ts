@@ -49,6 +49,13 @@ const members: Member[] = [
     image: ImageConstants.MEMBERS.tejGharti,
   },
   {
+    name: 'Abhiru Karki',
+    role: 'Graphics Designer',
+    projectsInvolved: [],
+    image:
+      'https://greenacresportsmed.com.au/wp-content/uploads/2018/01/dummy-image.jpg',
+  },
+  {
     name: 'Shankar Poudel',
     role: 'Frontend Developer (Intern)',
     projectsInvolved: [],
