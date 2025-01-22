@@ -8,7 +8,6 @@ export const Home = () => {
     <Layout>
       <div className="container p-8 min-h-screen overflow-hidden landscape:md:max-lg:pt-80">
         <Hero />
-        {/* Top 1 Product showcase section  */}
         <TopProduct />
         <Contact />
       </div>

@@ -1,3 +1,4 @@
+import { founders } from '@/constants/data/founders'
 import { Card, CardHeader, CardContent } from '../shadcn/ui/card'
 import { Layout } from './Layout'
 import { members } from '@/constants/data/members'
@@ -18,7 +19,36 @@ export const About = () => {
               out-source/freelance projects doing Web Development, Mobile App
               Development, and other software development services.
             </p>
-            <p className="text-left  text-lg lg:text-4xl font-bold pb-8">
+            {/* CEO/CTO Directo photo section */}
+            <p className="text-left  text-lg lg:text-4xl font-bold pb-5">
+              Meet our Founders and Members.
+            </p>
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl w-full px-8">
+                {founders.map((founder, index) => (
+                  <Card key={index} className="overflow-hidden mx-auto">
+                    <CardHeader className="p-0">
+                      <img
+                        src={founder.image}
+                        alt={founder.name}
+                        width={400}
+                        height={400}
+                        className="w-full h-64 object-cover"
+                        loading="lazy"
+                      />
+                    </CardHeader>
+                    <CardContent className="p-4 text-center">
+                      <h3 className="text-xl font-semibold">{founder.name}</h3>
+                      <p className="text-muted-foreground">
+                        {founder.position}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+
+            <p className="text-left  text-lg lg:text-4xl font-bold pb-8 mt-10">
               Amazing peoples who are/have working/worked with us
             </p>
           </div>
@@ -41,7 +71,7 @@ export const About = () => {
                   No.of Involved Projects &nbsp;
                   <span
                     title="Points is no.of involved projects"
-                    className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+                    className="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20 cursor-pointer"
                   >
                     {member.projectsInvolved.length}
                   </span>
