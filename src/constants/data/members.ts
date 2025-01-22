@@ -41,9 +41,19 @@ const members: Member[] = [
   },
   {
     name: 'Tej Bahadur Gharti Kshetri',
-    role: 'Frontend Developer',
-    projectsInvolved: [projectNames.A_TO_Z_ECOMMERCE],
+    role: 'Fullstack Developer',
+    projectsInvolved: [
+      projectNames.A_TO_Z_ECOMMERCE,
+      projectNames.DBL_INSURANCE,
+    ],
     image: ImageConstants.MEMBERS.tejGharti,
+  },
+  {
+    name: 'Shankar Poudel',
+    role: 'Frontend Developer (Intern)',
+    projectsInvolved: [],
+    image:
+      'https://greenacresportsmed.com.au/wp-content/uploads/2018/01/dummy-image.jpg',
   },
   {
     name: 'Prayukta Mishra',

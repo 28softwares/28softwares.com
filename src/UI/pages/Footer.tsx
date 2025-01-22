@@ -1,5 +1,4 @@
 import { companyDataConstants } from '@/constants/data/companyData.constant'
-import { MapPin } from 'lucide-react'
 import { navLinks } from '@/constants/navlinks'
 import { Link } from '@tanstack/react-router'
 
@@ -12,14 +11,30 @@ export const Footer = () => {
             28Softwares Pvt. Ltd.
           </h2>
           <article>Building tomorrows digital experience today.</article>
+          <hr />
+          <div className="space-y-6">
+            <p className="flex gap-1 leading-7">
+              <span>
+                <p className="font-medium">Head Office:</p>
+                <p>
+                  {companyDataConstants.address[0]},
+                  {companyDataConstants.country}
+                </p>
+                <p> {companyDataConstants.email[0]}</p>
+                <p>{companyDataConstants.phone[0]} </p>
+              </span>
+            </p>
 
-          <p className="flex gap-2">
-            <MapPin className="size-5" />
-            <span>
-              {companyDataConstants.address.nepal.city},{' '}
-              {companyDataConstants.country}
-            </span>
-          </p>
+            <p className="flex gap-1 leading-7">
+              <span>
+                <p className="font-medium">Australia Office:</p>
+                <p>{companyDataConstants.address[1]}</p>
+                <p> {companyDataConstants.email[1]}</p>
+
+                <p> {companyDataConstants.phone[1]}</p>
+              </span>
+            </p>
+          </div>
         </div>
 
         {/* Socials */}
@@ -59,7 +74,7 @@ export const Footer = () => {
       </div>
 
       <div className="flex  justify-center p-4  text-center">
-        Copyright © {companyDataConstants.foundedYear} -{' '}
+        Copyright © {companyDataConstants.foundedYear[0]} -{' '}
         {new Date().getFullYear()} | 28Softwares Pvt. Ltd.
       </div>
     </footer>

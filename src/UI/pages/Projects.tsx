@@ -74,7 +74,7 @@ const ProjectCard = ({ project, index }: { project: any; index: number }) => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full"
+            className="w-full z-10"
           >
             <Button
               variant="secondary"

@@ -1,35 +1,40 @@
 import {
+  CalendarDays,
+  GraduationCap,
   MonitorIcon,
   PaintbrushVertical,
   SmartphoneIcon,
-  WrenchIcon,
 } from 'lucide-react'
 
 export const services = {
   webDevelopement: {
     name: 'Web Development',
-    description:
-      'Designing and developing web-based applications for various purposes, such as customer portals, booking systems, ERP, and interactive tools.',
+    description: 'Custom Protocols, booking systems, and ERP solutions.',
     icon: <MonitorIcon />,
   },
   uiuxDesign: {
     name: 'UI/UX Design',
     description:
-      'Focusing on user interface (UI) and user experience (UX) design to enhance usability and user satisfaction.',
+      'User-friendly, visually appealing interfaces for better engagement.',
     icon: <PaintbrushVertical />,
   },
 
   mobileApplicationDevelopement: {
     name: 'Mobile Application Development',
-    description:
-      'We specialize in creating mobile applications tailored to your specific business needs, allowing customers to manage their profiles, track orders, and access services directly from their smartphones.',
+    description: 'Tailored mobile apps for seamless user experiences.',
     icon: <SmartphoneIcon />,
   },
 
-  maintenanceSupport: {
-    name: 'Maintenance & Support',
+  techConsulting: {
+    name: 'Tech Consulting',
     description:
-      'Providing ongoing support, updates, and maintenance services to ensure website performance and security.',
-    icon: <WrenchIcon />,
+      'Consulting services to individuals seeking their careers in IT, as well as to businesses looking to leverage technology for growth and innovation.',
+    icon: <GraduationCap />,
+  },
+  itEventsAndTrainings: {
+    name: 'IT Events and Trainings',
+    description:
+      'Conduct events and trainings to enhance individuals skill and help businesses leverage the latest technologies for competitive growth.',
+    icon: <CalendarDays />,
   },
 }
